@@ -9,9 +9,7 @@ Prioridade: Alta
 
 Objetivo: Validar a busca e seleção bem-sucedida de um voo de ida e volta utilizando datas válidas.
 
-Pré-condições:
-
-Estar na página de busca de voos logado no sistema.
+Pré-condições: Estar na página de busca de voos logado no sistema.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -27,10 +25,12 @@ Estar na página de busca de voos logado no sistema.
 
 ### TC-FS-002 — Selecionar viagem de apenas ida com data válida
 ID: QA-FS02
+
 Prioridade: Alta
+
 Objetivo: Validar a busca e seleção de um voo de apenas ida (*one-way*) com dados válidos.
-Pré-condições:
-Estar na página de busca de voos logado no sistema.
+
+Pré-condições: Estar na página de busca de voos logado no sistema.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -46,10 +46,12 @@ Estar na página de busca de voos logado no sistema.
 
 ### TC-FS-003 — Selecionar viagem de ida e volta com a mesma data de partida e retorno
 ID: QA-FS03
+
 Prioridade: Média
+
 Objetivo: Validar o comportamento do sistema ao selecionar datas de partida e retorno idênticas para uma viagem de ida e volta.
-Pré-condições:
-Estar na página de busca de voos logado no sistema.
+
+Pré-condições: Estar na página de busca de voos logado no sistema.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -65,10 +67,12 @@ Estar na página de busca de voos logado no sistema.
 
 ### TC-FS-004 — Verificar se o tipo de viagem padrão é "Ida e Volta"
 ID: QA-FS04
+
 Prioridade: Baixa
+
 Objetivo: Validar se a opção padrão de tipo de viagem ao carregar a tela é "Ida e Volta".
-Pré-condições:
-Estar na página de busca de voos recém-carregada.
+
+Pré-condições: Estar na página de busca de voos recém-carregada.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -78,10 +82,12 @@ Estar na página de busca de voos recém-carregada.
 
 ### TC-FS-005 — Verificar se o botão Continuar fica habilitado quando todos os campos obrigatórios são preenchidos
 ID: QA-FS05
+
 Prioridade: Alta
+
 Objetivo: Garantir que o botão de prosseguir só é ativado mediante o preenchimento correto e seleção de voo.
-Pré-condições:
-Estar na página de busca de voos.
+
+Pré-condições: Estar na página de busca de voos.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -94,10 +100,12 @@ Estar na página de busca de voos.
 
 ### TC-FS-006 — Selecionar voo em versões responsivas
 ID: QA-FS06
+
 Prioridade: Média
+
 Objetivo: Validar a funcionalidade de busca e seleção de voos em diferentes resoluções de tela.
-Pré-condições:
-Estar acessando o sistema via dispositivo móvel ou em modo de simulação responsiva.
+
+Pré-condições: Estar acessando o sistema via dispositivo móvel ou em modo de simulação responsiva.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -112,10 +120,12 @@ Estar acessando o sistema via dispositivo móvel ou em modo de simulação respo
 
 ### TC-FS-007 — Tentar prosseguir sem selecionar um voo
 ID: QA-FS07
+
 Prioridade: Alta
+
 Objetivo: Validar que o sistema bloqueia o avanço caso o usuário tente prosseguir sem escolher um voo da lista.
-Pré-condições:
-Estar na página de busca de voos com os campos preenchidos.
+
+Pré-condições: Estar na página de busca de voos com os campos preenchidos.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -128,10 +138,12 @@ Estar na página de busca de voos com os campos preenchidos.
 
 ### TC-FS-008 — Verificar se os voos não são exibidos quando os campos obrigatórios estão vazios
 ID: QA-FS08
+
 Prioridade: Alta
+
 Objetivo: Garantir que a listagem de voos permaneça oculta ou vazia se houver campos obrigatórios incompletos.
-Pré-condições:
-Estar na página de busca de voos no carregamento inicial.
+
+Pré-condições: Estar na página de busca de voos no carregamento inicial.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -142,10 +154,12 @@ Estar na página de busca de voos no carregamento inicial.
 
 ### TC-FS-009 — Selecionar mesma origem e destino com a mesma data de ida e volta
 ID: QA-FS09
+
 Prioridade: Alta
+
 Objetivo: Validar a restrição de rotas onde a origem e o destino são idênticos.
-Pré-condições:
-Estar na página de busca de voos.
+
+Pré-condições: Estar na página de busca de voos.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -157,10 +171,12 @@ Estar na página de busca de voos.
 
 ### TC-FS-010 — Selecionar viagem de ida e volta com data de retorno anterior à data de partida
 ID: QA-FS10
+
 Prioridade: Alta
+
 Objetivo: Garantir que o sistema rejeite períodos de viagem ilógicos (retorno antes da ida).
-Pré-condições:
-Estar na página de busca de voos.
+
+Pré-condições: Estar na página de busca de voos.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -173,10 +189,12 @@ Estar na página de busca de voos.
 
 ### TC-FS-011 — Selecionar múltiplos voos ao mesmo tempo
 ID: QA-FS11
+
 Prioridade: Média
+
 Objetivo: Validar que o sistema permite selecionar apenas um voo por transação de compra.
-Pré-condições:
-Estar na tela de resultados de voos preenchida.
+
+Pré-condições: Estar na tela de resultados de voos preenchida.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -189,10 +207,12 @@ Estar na tela de resultados de voos preenchida.
 
 ### TC-FS-012 — Verificar se o campo de data de retorno fica oculto para viagens de apenas ida
 ID: QA-FS12
+
 Prioridade: Média
+
 Objetivo: Validar a alteração dinâmica da interface ao alternar para o tipo de viagem *One-way*.
-Pré-condições:
-Estar na página de busca de voos.
+
+Pré-condições: Estar na página de busca de voos.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
@@ -203,10 +223,12 @@ Estar na página de busca de voos.
 
 ### TC-FS-013 — Tentar selecionar a mesma cidade para origem e destino
 ID: QA-FS13
+
 Prioridade: Alta
+
 Objetivo: Validar a validação de campos iguais de origem e destino utilizando parâmetros específicos.
-Pré-condições:
-Estar na página de busca de voos.
+
+Pré-condições: Estar na página de busca de voos.
 
 | Passo | Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
@@ -217,10 +239,12 @@ Estar na página de busca de voos.
 
 ### TC-FS-014 — Tentar selecionar data de partida retroativa (passada)
 ID: QA-FS14
+
 Prioridade: Alta
+
 Objetivo: Impedir a seleção de datas retroativas no campo de partida.
-Pré-condições:
-Estar na página de busca de voos.
+
+Pré-condições: Estar na página de busca de voos.
 
 | Passo | Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
@@ -231,10 +255,12 @@ Estar na página de busca de voos.
 
 ### TC-FS-015 — Validação de comportamento ao alternar o tipo de viagem com dados preenchidos
 ID: QA-FS15
+
 Prioridade: Média
+
 Objetivo: Verificar se os dados e o layout se comportam de maneira estável ao trocar o tipo de viagem após preenchimento parcial.
-Pré-condições:
-Estar na página de busca de voos com dados preenchidos.
+
+Pré-condições: Estar na página de busca de voos com dados preenchidos.
 
 | Passo | Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
@@ -245,10 +271,12 @@ Estar na página de busca de voos com dados preenchidos.
 
 ### TC-FS-016 — Tentar acessar a página de busca de voos sem autenticação (Acesso Direto via URL)
 ID: QA-FS16
+
 Prioridade: Alta
+
 Objetivo: Validar as regras de segurança e controle de sessão ao tentar acessar a URL protegida diretamente.
-Pré-condições:
-Estar com a sessão deslogada no navegador.
+
+Pré-condições: Estar com a sessão deslogada no navegador.
 
 | Passo | Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
@@ -258,10 +286,12 @@ Estar com a sessão deslogada no navegador.
 
 ### TC-FS-017 — Validar persistência da sessão após atualização da página (F5)
 ID: QA-FS17
+
 Prioridade: Média
+
 Objetivo: Garantir estabilidade e persistência de dados ou do estado da aplicação após um *refresh* (F5).
-Pré-condições:
-Estar na página de busca de voos logado e com dados inseridos.
+
+Pré-condições: Estar na página de busca de voos logado e com dados inseridos.
 
 | Passo | Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
@@ -272,10 +302,12 @@ Estar na página de busca de voos logado e com dados inseridos.
 
 ### TC-FS-018 — Validar comportamento com campos de seleção de Origem e Destino vazios no carregamento inicial
 ID: QA-FS18
+
 Prioridade: Baixa
+
 Objetivo: Verificar o estado inicial padrão dos seletores de origem e destino na abertura da página.
-Pré-condições:
-Estar acessando a página de busca de voos pela primeira vez na sessão.
+
+Pré-condições: Estar acessando a página de busca de voos pela primeira vez na sessão.
 
 | Passo | Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
