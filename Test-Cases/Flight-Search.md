@@ -1,173 +1,150 @@
 # Flight Search – Test Cases
 
-## Valid Scenarios
+# Busca de Voos – Casos de Teste
+
+## Cenários Válidos
 
 ### TC-FS-001
-**Title:** Select return trip with valid dates  
+**Título:** Selecionar viagem de ida e volta com datas válidas
 
-**Steps:**
-1. Access the flight search page
-2. Select trip type as Return
-3. Enter a valid origin and destination
-4. Select valid departure and return dates
-5. Observe available flights displayed automatically
-6. Select one available flight
-7. Click on Continue
-
-**Expected Result:**  
-Available flights are automatically displayed after filling the search criteria, allowing the user to select a flight and proceed to the next step.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos. | Os voos disponíveis são exibidos automaticamente após o preenchimento dos critérios de busca, permitindo que o usuário selecione um voo e prossiga para a próxima etapa. |
+| 2 | Selecionar o tipo de viagem como Ida e Volta (Return). | |
+| 3 | Inserir origem e destino válidos. | |
+| 4 | Selecionar datas válidas de ida e volta. | |
+| 5 | Observar os voos disponíveis exibidos automaticamente. | |
+| 6 | Selecionar um voo disponível. | |
+| 7 | Clicar em Continuar. | |
 
 ---
 
 ### TC-FS-002
-**Title:** Select one-way trip with valid date  
+**Título:** Selecionar viagem de apenas ida com data válida
 
-**Steps:**
-1. Access the flight search page
-2. Select trip type as One-way
-3. Enter a valid origin and destination
-4. Select a valid departure date
-5. Observe available flights displayed automatically
-6. Select one available flight
-7. Click on Continue
-
-**Expected Result:**  
-Flights are displayed automatically and the user can proceed with a one-way flight selection.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos. | Os voos são exibidos automaticamente e o usuário pode prosseguir com a seleção de um voo de apenas ida. |
+| 2 | Selecionar o tipo de viagem como Apenas Ida (One-way). | |
+| 3 | Inserir origem e destino válidos. | |
+| 4 | Selecionar uma data de ida válida. | |
+| 5 | Observar os voos disponíveis exibidos automaticamente. | |
+| 6 | Selecionar um voo disponível. | |
+| 7 | Clicar em Continuar. | |
 
 ---
 
 ### TC-FS-003
-**Title:** Select return trip with same departure and return date  
+**Título:** Selecionar viagem de ida e volta com a mesma data de partida e retorno
 
-**Steps:**
-1. Access the flight search page
-2. Select trip type as Return
-3. Enter a valid origin and destination
-4. Select the same date for departure and return
-5. Observe available flights displayed automatically
-6. Select one available flight
-7. Click on Continue
-
-**Expected Result:**  
-System allows flight selection when departure and return dates are the same.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos. | O sistema permite a seleção do voo quando as datas de ida e volta são iguais. |
+| 2 | Selecionar o tipo de viagem como Ida e Volta. | |
+| 3 | Inserir origem e destino válidos. | |
+| 4 | Selecionar a mesma data para partida e retorno. | |
+| 5 | Observar os voos disponíveis exibidos automaticamente. | |
+| 6 | Selecionar um voo disponível. | |
+| 7 | Clicar em Continuar. | |
 
 ---
 
 ### TC-FS-004
-**Title:** Verify default trip type is "Return"  
+**Título:** Verificar se o tipo de viagem padrão é "Ida e Volta"
 
-**Steps:**
-1. Access the flight search page
-
-**Expected Result:**  
-Return trip option is selected by default.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos. | A opção de viagem de ida e volta vem selecionada por padrão. |
 
 ---
 
 ### TC-FS-005
-**Title:** Verify Continue button enabled when all required fields are filled  
+**Título:** Verificar se o botão Continuar fica habilitado quando todos os campos obrigatórios são preenchidos
 
-**Steps:**
-1. Access the flight search page
-2. Fill all mandatory fields with valid data
-3. Observe available flights displayed automatically
-4. Select one available flight
-
-**Expected Result:**  
-Continue button becomes enabled after selecting a flight.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos. | O botão Continuar fica habilitado após a seleção de um voo. |
+| 2 | Preencher todos os campos obrigatórios com dados válidos. | |
+| 3 | Observar os voos disponíveis exibidos automaticamente. | |
+| 4 | Selecionar um voo disponível. | |
 
 ---
 
 ### TC-FS-006
-**Title:** Select flight on responsive versions  
+**Título:** Selecionar voo em versões responsivas
 
-**Steps:**
-1. Access the flight search page on different screen sizes
-2. Fill all mandatory fields
-3. Observe available flights displayed automatically
-4. Select one available flight
-
-**Expected Result:**  
-Flight selection works correctly across responsive layouts.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos em diferentes tamanhos de tela. | A seleção de voos funciona corretamente em layouts responsivos. |
+| 2 | Preencher todos os campos obrigatórios. | |
+| 3 | Observar os voos disponíveis exibidos automaticamente. | |
+| 4 | Selecionar um voo disponível. | |
 
 ---
 
-## Invalid Scenarios
+## Cenários Inválidos
 
 ### TC-FS-007
-**Title:** Attempt to continue without selecting a flight  
+**Título:** Tentar prosseguir sem selecionar um voo
 
-**Steps:**
-1. Access the flight search page
-2. Fill all mandatory fields
-3. Do not select any flight
-4. Attempt to click on Continue
-
-**Expected Result:**  
-System prevents progression and displays a validation message.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos. | O sistema impede o avanço e exibe uma mensagem de validação. |
+| 2 | Preencher todos os campos obrigatórios. | |
+| 3 | Não selecionar nenhum voo. | |
+| 4 | Tentar clicar em Continuar. | |
 
 ---
 
 ### TC-FS-008
-**Title:** Verify flights are not displayed when required fields are empty  
+**Título:** Verificar se os voos não são exibidos quando os campos obrigatórios estão vazios
 
-**Steps:**
-1. Access the flight search page
-2. Leave one or more required fields empty
-
-**Expected Result:**  
-Available flights are not displayed until all required fields are filled.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos. | Os voos disponíveis não são exibidos até que todos os campos obrigatórios sejam preenchidos. |
+| 2 | Deixar um ou mais campos obrigatórios vazios. | |
 
 ---
 
 ### TC-FS-009
-**Title:** Select same origin and destination with same departure and return date  
+**Título:** Selecionar mesma origem e destino com a mesma data de ida e volta
 
-**Steps:**
-1. Access the flight search page
-2. Enter the same city for origin and destination
-3. Select the same date for departure and return
-
-**Expected Result:**  
-System prevents flight search due to invalid route configuration.
-
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos. | O sistema impede a busca de voos devido a uma configuração de rota inválida. |
+| 2 | Inserir a mesma cidade para origem e destino. | |
+| 3 | Selecionar a mesma data para partida e retorno. | |
 
 ---
 
 ### TC-FS-010
-**Title:** Select return trip with return date earlier than departure date  
+**Título:** Selecionar viagem de ida e volta com data de retorno anterior à data de partida
 
-**Steps:**
-1. Access the flight search page
-2. Select trip type as Return
-3. Enter valid origin and destination
-4. Select a return date earlier than the departure date
-
-**Expected Result:**  
-System prevents invalid date selection and displays an error message.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos. | O sistema impede a seleção de data inválida e exibe uma mensagem de erro. |
+| 2 | Selecionar o tipo de viagem como Ida e Volta. | |
+| 3 | Inserir origem e destino válidos. | |
+| 4 | Selecionar uma data de retorno anterior à data de partida. | |
 
 ---
 
 ### TC-FS-011
-**Title:** Select multiple flights at the same time  
+**Título:** Selecionar múltiplos voos ao mesmo tempo
 
-**Steps:**
-1. Access the flight search page
-2. Fill all mandatory fields
-3. Observe available flights displayed automatically
-4. Attempt to select more than one flight
-
-**Expected Result:**  
-System allows selection of only one flight at a time.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos. | O sistema permite a seleção de apenas um voo por vez. |
+| 2 | Preencher todos os campos obrigatórios. | |
+| 3 | Observar os voos disponíveis exibidos automaticamente. | |
+| 4 | Tentar selecionar mais de um voo. | |
 
 ---
 
 ### TC-FS-012
-**Title:** Verify return date field is hidden for one-way trips  
+**Título:** Verificar se o campo de data de retorno fica oculto para viagens de apenas ida
 
-**Steps:**
-1. Access the flight search page
-2. Select trip type as One-way
-
-**Expected Result:**  
-Return date field is not displayed when one-way trip is selected.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de busca de voos. | O campo de data de retorno não é exibido quando a viagem de apenas ida é selecionada. |
+| 2 | Selecionar o tipo de viagem como Apenas Ida. | |
