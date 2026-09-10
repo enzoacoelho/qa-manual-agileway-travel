@@ -4,9 +4,13 @@
 
 ### TC-FS-001 — Selecionar viagem de ida e volta com datas válidas
 ID: QA-FS01
+
 Prioridade: Alta
+
 Objetivo: Validar a busca e seleção bem-sucedida de um voo de ida e volta utilizando datas válidas.
+
 Pré-condições:
+
 Estar na página de busca de voos logado no sistema.
 
 | Passo | Ação | Resultado Esperado |
