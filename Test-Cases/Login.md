@@ -1,89 +1,89 @@
-# Autenticação (Login / Logout) – Casos de Teste
+# Login / Logout – Casos de Teste
 
 ## Cenários Válidos
 
-### TC-LOGIN-001 — Autenticação com credenciais válidas e persistência de sessão
+### TC-LOGIN-001 — Autenticação com credenciais padrão válidas
 * **ID:** QA-L01
 * **Prioridade:** Alta
-* **Objetivo:** Validar o login utilizando credenciais válidas e a opção de persistência de sessão.
+* **Objetivo:** Validar o login utilizando as credenciais padrão indicadas na interface.
 * **Pré-condições:** 
-  * O usuário deve estar cadastrado no sistema.
+  * Estar na página de login.
 
 | Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
-| **1** | Acessar a página de login. | URL do sistema | Página de login carregada corretamente com os campos visíveis. |
-| **2** | Inserir nome de usuário e senha válidos. | **User Name**: `agileway`, **Password**: `test$W1se` | Campos preenchidos corretamente. |
-| **3** | Marcar a opção de lembrar sessão. | Checkbox: `Remember me` | Opção marcada. |
-| **4** | Clicar no botão de acesso. | Botão: `Sign in` | Usuário autenticado com sucesso e redirecionado para a página inicial. |
+| **1** | Inserir o nome de usuário válido. | **User Name**: `agileway` | Campo preenchido corretamente. |
+| **2** | Inserir a senha válida. | **Password**: `test$W1se` | Campo preenchido corretamente. |
+| **3** | Acionar o botão de acesso. | Botão: `Sign in` | Usuário autenticado com sucesso e redirecionado para a tela principal. |
 
 ---
 
-### TC-LOGIN-002 — Encerramento de sessão (Logout) com sucesso
+### TC-LOGIN-002 — Autenticação com a opção "Remember me" selecionada
 * **ID:** QA-L02
-* **Prioridade:** Alta
-* **Objetivo:** Validar o fluxo de encerramento de sessão do usuário autenticado.
+* **Prioridade:** Média
+* **Objetivo:** Validar o login marcando a opção de persistência de sessão.
 * **Pré-condições:** 
-  * O usuário deve estar logado no sistema.
+  * Estar na página de login.
 
 | Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
-| **1** | Localizar e acionar a opção de encerramento de sessão. | Botão / Link: `Logout` | A sessão é encerrada de forma segura. |
-| **2** | Verificar a tela exibida após a ação. | *Nenhum* | O usuário é redirecionado para a tela de login ou página inicial pública, sem acesso a dados protegidos. |
+| **1** | Preencher usuário e senha válidos. | **User Name**: `agileway`, **Password**: `test$W1se` | Campos preenchidos. |
+| **2** | Marcar o checkbox de persistência. | Checkbox: `Remember me` | Opção marcada. |
+| **3** | Acionar o botão de acesso. | Botão: `Sign in` | Login efetuado com sucesso considerando a preferência. |
+
+---
+
+### TC-LOGIN-003 — Encerramento de sessão (Logout) com sucesso
+* **ID:** QA-L03
+* **Prioridade:** Alta
+* **Objetivo:** Validar o fluxo de encerramento da sessão ativa do usuário.
+* **Pré-condições:** 
+  * O usuário deve estar autenticado no sistema.
+
+| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| :---: | :--- | :--- | :--- |
+| **1** | Acionar a opção de encerramento de sessão. | Botão / Link: `Logout` | A sessão ativa é encerrada de forma segura. |
+| **2** | Verificar o redirecionamento. | *Nenhum* | O usuário é redirecionado para a tela de login, sem acesso posterior às páginas protegidas. |
 
 ---
 
 ## Cenários Inválidos
 
-### TC-LOGIN-003 — Tentativa de login com campos obrigatórios vazios
-* **ID:** QA-L03
+### TC-LOGIN-004 — Tentativa de login com campos obrigatórios vazios
+* **ID:** QA-L04
 * **Prioridade:** Média
-* **Objetivo:** Verificar o comportamento do sistema e o estado do botão de acesso ao manter os campos vazios.
+* **Objetivo:** Verificar se o sistema impede o avanço ao tentar autenticar sem preencher os campos.
 * **Pré-condições:** 
   * Estar na página de login.
 
 | Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
 | **1** | Manter os campos de usuário e senha vazios. | *Nenhum* | Campos vazios. |
-| **2** | Tentar acionar o botão de acesso. | Botão: `Sign in` | O sistema exibe mensagens de validação e impede o acesso. |
+| **2** | Acionar o botão de acesso. | Botão: `Sign in` | O sistema exibe mensagem de validação e impede o acesso. |
 
 ---
 
-### TC-LOGIN-004 — Tentativa de login com senha incorreta e usuário válido
-* **ID:** QA-L04
-* **Prioridade:** Alta
-* **Objetivo:** Validar a recusa de acesso ao informar uma senha incorreta vinculada a um usuário existente.
-* **Pré-condições:** 
-  * Estar na página de login.
-
-| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| **1** | Inserir nome de usuário válido e senha incorreta. | **User Name**: `agileway`, **Password**: `senhaInvalida123` | Campos preenchidos. |
-| **2** | Clicar no botão de acesso. | Botão: `Sign in` | O sistema exibe mensagem de erro de autenticação e nega o acesso. |
-
----
-
-### TC-LOGIN-005 — Tentativa de login com usuário vazio e senha válida
+### TC-LOGIN-005 — Tentativa de login com senha incorreta
 * **ID:** QA-L05
-* **Prioridade:** Média
-* **Objetivo:** Validar a restrição de submissão ao omitir apenas o campo de usuário.
+* **Prioridade:** Alta
+* **Objetivo:** Validar a recusa de acesso ao informar uma senha inválida para o usuário.
 * **Pré-condições:** 
   * Estar na página de login.
 
 | Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
-| **1** | Deixar o campo de usuário vazio e preencher a senha. | **User Name**: *(vazio)*, **Password**: `test$W1se` | Senha preenchida. |
-| **2** | Clicar no botão de acesso. | Botão: `Sign in` | O sistema exibe mensagem de validação para o campo de usuário e impede o avanço. |
+| **1** | Inserir usuário válido e senha incorreta. | **User Name**: `agileway`, **Password**: `senhaErrada` | Campos preenchidos. |
+| **2** | Acionar o botão de acesso. | Botão: `Sign in` | O sistema exibe mensagem de erro de autenticação e bloqueia o acesso. |
 
 ---
 
-### TC-LOGIN-006 — Tentativa de login com usuário válido e senha vazia
+### TC-LOGIN-006 — Tentativa de login com usuário inexistente
 * **ID:** QA-L06
-* **Prioridade:** Média
-* **Objetivo:** Validar a restrição de submissão ao omitir apenas o campo de senha.
+* **Prioridade:** Alta
+* **Objetivo:** Validar o comportamento do sistema ao tentar autenticar com um nome de usuário não cadastrado.
 * **Pré-condições:** 
   * Estar na página de login.
 
 | Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
-| **1** | Preencher o usuário e deixar o campo de senha vazio. | **User Name**: `agileway`, **Password**: *(vazio)* | Usuário preenchido. |
-| **2** | Clicar no botão de acesso. | Botão: `Sign in` | O sistema exibe mensagem de validação para o campo de senha e impede o avanço. |
+| **1** | Inserir nome de usuário inválido e senha válida. | **User Name**: `usuarioInvalido`, **Password**: `test$W1se` | Campos preenchidos. |
+| **2** | Acionar o botão de acesso. | Botão: `Sign in` | O sistema exibe mensagem de erro informando falha na autenticação. |
