@@ -112,3 +112,12 @@
 | 1 | Acessar a página de pagamento. | O sistema processa o pagamento apenas uma vez e impede envios duplicados. |
 | 2 | Preencher todos os campos obrigatórios com dados válidos. | |
 | 3 | Clicar em Pagar Agora várias vezes rapidamente. | |
+
+---
+
+### TC-PAY-010
+**Título:** Tentar acessar a página de pagamento diretamente via URL sem concluir as etapas anteriores
+
+| Passo | Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| :---: | :--- | :--- | :--- |
+| 1 | Inserir diretamente a URL da página de pagamento no navegador. | URL de *payment* | O sistema deve bloquear o acesso direto, exibir uma mensagem de erro de acesso não autorizado ou redirecionar o usuário para o início do fluxo. |
