@@ -1,71 +1,60 @@
-# Login – Test Cases
+# Login – Casos de Teste
 
-## Valid Scenarios
+## Cenários Válidos
 
 ### TC-LOGIN-001
-**Title:** Login with valid credentials  
+**Título:** Autenticação com credenciais válidas
 
-**Steps:**
-1. Access the login page
-2. Enter valid username and password
-3. Click on Login button
-
-**Expected Result:**  
-User is successfully authenticated and redirected to the home page.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de login. | O usuário é autenticado com sucesso e redirecionado para a página inicial. |
+| 2 | Inserir nome de usuário e senha válidos. | |
+| 3 | Clicar no botão de Login. | |
 
 ---
 
-## Invalid Scenarios
+## Cenários Inválidos
 
 ### TC-LOGIN-002
-**Title:** Login with empty required fields  
+**Título:** Tentativa de login com campos obrigatórios vazios
 
-**Steps:**
-1. Access the login page
-2. Leave username and password empty
-3. Click on Login button
-
-**Expected Result:**  
-System displays validation message indicating required fields.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de login. | O sistema exibe uma mensagem de validação indicando os campos obrigatórios. |
+| 2 | Deixar os campos de usuário e senha vazios. | |
+| 3 | Clicar no botão de Login. | |
 
 ---
 
 ### TC-LOGIN-003
-**Title:** Login with invalid credentials  
+**Título:** Tentativa de login com credenciais inválidas
 
-**Steps:**
-1. Access the login page
-2. Enter invalid username or password
-3. Click on Login button
-
-**Expected Result:**  
-System displays error message and denies access.
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de login. | O sistema exibe uma mensagem de erro e nega o acesso. |
+| 2 | Inserir nome de usuário ou senha inválidos. | |
+| 3 | Clicar no botão de Login. | |
 
 ---
 
 ### TC-LOGIN-004
-**Title:** Login with empty username and valid password  
+**Título:** Tentativa de login com usuário vazio e senha válida
 
-**Steps:**
-1. Access the login page
-2. Leave username empty
-3. Enter a valid password
-4. Click on Login button
-
-**Expected Result:**  
-System displays validation message for username field. 
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de login. | O sistema exibe uma mensagem de validação para o campo de usuário. |
+| 2 | Deixar o campo de usuário vazio. | |
+| 3 | Inserir uma senha válida. | |
+| 4 | Clicar no botão de Login. | |
 
 ---
 
 ### TC-LOGIN-005
-**Title:** Login with valid username and empty password  
+**Título:** Tentativa de login com usuário válido e senha vazia
 
-**Steps:**
-1. Access the login page
-2. Enter a valid username
-3. Leave password empty
-4. Click on Login button
-
-**Expected Result:**  
-System displays validation message for password field.
-
+| Passo | Ação | Resultado Esperado |
+| :---: | :--- | :--- |
+| 1 | Acessar a página de login. | O sistema exibe uma mensagem de validação para o campo de senha. |
+| 2 | Inserir um nome de usuário válido. | |
+| 3 | Deixar a senha vazia. | |
+| 4 | Clicar no botão de Login. | |
