@@ -78,7 +78,7 @@
 
 ### TC-LOGIN-006 — Tentativa de login com usuário inexistente
 * **ID:** QA-L06
-* **Prioridade:** Alta
+* **Prioridade:** Média
 * **Objetivo:** Validar o comportamento do sistema ao tentar autenticar com um nome de usuário não cadastrado.
 * **Pré-condições:** 
   * Estar na página de login.
