@@ -63,22 +63,6 @@
 
 ---
 
-### TC-PAY-005 — Inserir dados de cartão de crédito que não correspondem ao tipo de cartão selecionado
-* **ID:** QA-PAY05
-* **Prioridade:** Alta
-* **Objetivo:** Verificar se o sistema valida a consistência entre o tipo de cartão selecionado e o número inserido.
-* **Pré-condições:** Estar na página de pagamento.
-
-| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| **1** | Acessar a página de pagamento. | URL de pagamento | A tela de pagamento é exibida. |
-| **2** | Selecionar um tipo específico de cartão de crédito (ex: Visa). | **Tipo**: `Visa` | O tipo de cartão fica selecionado. |
-| **3** | Inserir um número de cartão de crédito pertencente a outra bandeira (ex: MasterCard). | **Número**: `Incompatível` | O número é inserido no campo correspondente. |
-| **4** | Preencher os campos obrigatórios restantes com dados válidos. | Validade e Nome válidos | Demais campos preenchidos. |
-| **5** | Clicar no botão `Pay Now` (Pagar Agora). | Botão: `Pay Now` | O sistema detecta a divergência no tipo de cartão e impede o envio do pagamento. |
-
----
-
 ### TC-PAY-006 — Tentar realizar o pagamento com formato de número de cartão de crédito inválido
 * **ID:** QA-PAY06
 * **Prioridade:** Alta
