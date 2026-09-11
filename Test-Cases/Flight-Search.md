@@ -118,7 +118,7 @@ Pré-condições: Estar acessando o sistema via dispositivo móvel ou em modo de
 
 ## Cenários Inválidos
 
-### TC-FS-007 — Tentar prosseguir sem selecionar um voo
+### TC-FS-007 — Tentativa de prosseguir para o booking sem selecionar um voo
 ID: QA-FS07
 
 Prioridade: Alta
@@ -298,17 +298,4 @@ Pré-condições: Estar na página de busca de voos logado e com dados inseridos
 | 1 | Preencher os campos de origem, destino e selecionar um tipo de viagem. | Origem e Destino válidos | Campos preenchidos corretamente. |
 | 2 | Atualizar a página do navegador (pressionar F5). | Ação de Refresh | O sistema deve manter o usuário logado e restaurar os campos ou redefinir para o estado padrão de forma controlada, sem quebrar a aplicação. |
 
----
 
-### TC-FS-018 — Validar comportamento com campos de seleção de Origem e Destino vazios no carregamento inicial
-ID: QA-FS18
-
-Prioridade: Baixa
-
-Objetivo: Verificar o estado inicial padrão dos seletores de origem e destino na abertura da página.
-
-Pré-condições: Estar acessando a página de busca de voos pela primeira vez na sessão.
-
-| Passo | Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| 1 | Inspecionar os campos `From` e `To` logo após carregar a tela. | Visualização dos selects | Os campos devem vir com uma opção padrão pré-selecionada (ou vazia com placeholder) e os voos não devem ser listados incorretamente até que critérios válidos estejam definidos. |
