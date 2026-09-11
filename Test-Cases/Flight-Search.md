@@ -121,7 +121,7 @@ Pré-condições: Estar acessando o sistema via dispositivo móvel ou em modo de
 ### TC-FS-007 — Tentativa de prosseguir para o booking sem selecionar um voo
 ID: QA-FS07
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Validar que o sistema bloqueia o avanço caso o usuário tente prosseguir sem escolher um voo da lista.
 
@@ -139,7 +139,7 @@ Pré-condições: Estar na página de busca de voos com os campos preenchidos.
 ### TC-FS-008 — Verificar se os voos não são exibidos quando os campos obrigatórios estão vazios
 ID: QA-FS08
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Garantir que a listagem de voos permaneça oculta ou vazia se houver campos obrigatórios incompletos.
 
@@ -155,7 +155,7 @@ Pré-condições: Estar na página de busca de voos no carregamento inicial.
 ### TC-FS-009 — Selecionar mesma origem e destino com a mesma data de ida e volta
 ID: QA-FS09
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Validar a restrição de rotas onde a origem e o destino são idênticos.
 
@@ -172,7 +172,7 @@ Pré-condições: Estar na página de busca de voos.
 ### TC-FS-010 — Selecionar viagem de ida e volta com data de retorno anterior à data de partida
 ID: QA-FS10
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Garantir que o sistema rejeite períodos de viagem ilógicos (retorno antes da ida).
 
@@ -224,7 +224,7 @@ Pré-condições: Estar na página de busca de voos.
 ### TC-FS-013 — Tentar selecionar a mesma cidade para origem e destino
 ID: QA-FS13
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Validar a validação de campos iguais de origem e destino utilizando parâmetros específicos.
 
@@ -240,7 +240,7 @@ Pré-condições: Estar na página de busca de voos.
 ### TC-FS-014 — Tentar selecionar data de partida retroativa (passada)
 ID: QA-FS14
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Impedir a seleção de datas retroativas no campo de partida.
 
