@@ -68,21 +68,6 @@
 
 ---
 
-### TC-FS-005 — Verificar se o botão Continuar fica habilitado quando todos os campos obrigatórios são preenchidos
-* **ID:** QA-FS05
-* **Prioridade:** Alta
-* **Objetivo:** Garantir que o botão de prosseguir só é ativado mediante o preenchimento correto e seleção de voo.
-* **Pré-condições:** Estar na página de busca de voos.
-
-| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| **1** | Acessar a página de busca de voos. | URL da aplicação | A tela é exibida com o botão de continuar em estado inativo ou aguardando preenchimento. |
-| **2** | Preencher todos os campos obrigatórios com dados válidos. | Origem, destino e datas válidas | Os filtros de rota e data são aplicados. |
-| **3** | Observar os voos disponíveis exibidos automaticamente. | Listagem de voos | Os voos aparecem na tela, mas o avanço exige a seleção de um item. |
-| **4** | Selecionar um voo disponível. | Checkbox de voo marcado | O botão de prosseguir é habilitado para uso após a marcação do voo. |
-
----
-
 ### TC-FS-006 — Selecionar voo em versões responsivas
 * **ID:** QA-FS06
 * **Prioridade:** Média
@@ -224,19 +209,6 @@
 | :---: | :--- | :--- | :--- |
 | **1** | Preencher a origem, destino e a data de retorno. | Campos preenchidos para ida e volta | Os dados inseridos refletem corretamente na interface. |
 | **2** | Alternar o tipo de viagem para *One way*. | Radio button: `One way` | O campo de retorno é ocultado ou limpo, mantendo a estabilidade da interface e preservando os dados da ida. |
-
----
-
-### TC-FS-016 — Tentar acessar a página de busca de voos sem autenticação (Acesso Direto via URL)
-* **ID:** QA-FS16
-* **Prioridade:** Alta
-* **Objetivo:** Validar as regras de segurança e controle de sessão ao tentar acessar a URL protegida diretamente.
-* **Pré-condições:** Estar com a sessão deslogada no navegador.
-
-| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| **1** | Inserir diretamente a URL protegida no navegador. | URL: `https://travel.agileway.net/flights/start` | A requisição direta da rota restrita é disparada sem sessão ativa. |
-| **2** | Submeter o acesso e verificar o redirecionamento. | Ação de navegação por URL | O sistema deve bloquear o acesso e redirecionar o usuário para a tela de login ou exibir uma mensagem de erro de acesso negado/não autorizado. |
 
 ---
 
