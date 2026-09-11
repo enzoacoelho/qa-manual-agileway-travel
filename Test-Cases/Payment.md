@@ -3,181 +3,152 @@
 ## Cenários Válidos
 
 ### TC-PAY-001 — Concluir o pagamento com dados de cartão de crédito válidos
-ID: QA-PAY01
+* **ID:** QA-PAY01
+* **Prioridade:** Alta
+* **Objetivo:** Validar o processamento bem-sucedido de um pagamento utilizando dados de cartão de crédito válidos.
+* **Pré-condições:** Estar na página de pagamento após preencher corretamente os detalhes do passageiro.
 
-Prioridade: Alta
-
-Objetivo: Validar o processamento bem-sucedido de um pagamento utilizando dados de cartão de crédito válidos.
-
-Pré-condições: Estar na página de pagamento após preencher corretamente os detalhes do passageiro.
-
-| Passo | Ação | Resultado Esperado |
-| :---: | :--- | :--- |
-| 1 | Acessar a página de pagamento após concluir os detalhes do passageiro. | Detalhes do voo e valores são exibidos na tela e abaixo um formulário para inserir dados do cartão de crédito é exibida na tela |
-| 2 | Selecionar o tipo de cartão de crédito.  | Checkbox do tipo de cartão fica visivelmente selecionado |
-| 3 | Inserir um número de cartão de crédito válido. | |
-| 4 | Inserir uma data de validade válida. | |
-| 5 | Inserir o nome do portador do cartão válido. | |
-| 6 | Clicar em Pagar Agora (Pay Now). | Confirmação de pagamento e detalhes da compra e Booking number exibidos na tela 
+| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| :---: | :--- | :--- | :--- |
+| **1** | Acessar a página de pagamento após concluir os detalhes do passageiro. | URL de pagamento / Sessão ativa | Detalhes do voo e valores são exibidos na tela, junto ao formulário para inserir os dados do cartão de crédito. |
+| **2** | Selecionar o tipo de cartão de crédito. | Checkbox / Radio do cartão | O tipo/bandeira do cartão fica visivelmente selecionado na interface. |
+| **3** | Inserir um número de cartão de crédito válido. | **Card Number**: `Número válido` | O número é preenchido corretamente no campo correspondente. |
+| **4** | Inserir uma data de validade válida. | **Expiration**: `MM/AA válido` | A data de validade é aceita pelo formato do campo. |
+| **5** | Inserir o nome do portador do cartão válido. | **Cardholder Name**: `Nome válido` | O nome do portador é preenchido sem erros de validação. |
+| **6** | Clicar em Pagar Agora (Pay Now). | Botão: `Pay Now` | Confirmação de pagamento realizada com sucesso, exibindo os detalhes da compra e o *Booking number* na tela. |
 
 ---
 
 ## Cenários Inválidos
 
 ### TC-PAY-002 — Tentar realizar o pagamento com todos os campos obrigatórios vazios
-ID: QA-PAY02
+* **ID:** QA-PAY02
+* **Prioridade:** Média
+* **Objetivo:** Garantir que o sistema bloqueie o pagamento e exiba validações quando nenhum campo for preenchido.
+* **Pré-condições:** Estar na página de pagamento.
 
-Prioridade: Média
-
-Objetivo: Garantir que o sistema bloqueie o pagamento e exiba validações quando nenhum campo for preenchido.
-
-Pré-condições: Estar na página de pagamento.
-
-| Passo | Ação | Resultado Esperado |
-| :---: | :--- | :--- |
-| 1 | Acessar a página de pagamento. | O sistema exibe mensagens de validação e impede o envio do pagamento. |
-| 2 | Clicar em Pagar Agora sem preencher nenhum campo. | |
+| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| :---: | :--- | :--- | :--- |
+| **1** | Acessar a página de pagamento com todos os campos em branco. | *Nenhum* | A página de pagamento é exibida com os campos prontos para preenchimento. |
+| **2** | Clicar no botão `Pay Now` (Pagar Agora) sem preencher nenhum dado. | Botão: `Pay Now` | O sistema exibe mensagens de validação para os campos obrigatórios e impede o envio do pagamento. |
 
 ---
 
 ### TC-PAY-003 — Tentar realizar o pagamento com os campos obrigatórios preenchidos parcialmente
-ID: QA-PAY03
+* **ID:** QA-PAY03
+* **Prioridade:** Média
+* **Objetivo:** Verificar se o sistema impede o avanço quando apenas parte dos campos obrigatórios é preenchida.
+* **Pré-condições:** Estar na página de pagamento.
 
-Prioridade: Média
-
-Objetivo: Verificar se o sistema impede o avanço quando apenas parte dos campos obrigatórios é preenchida.
-
-Pré-condições: Estar na página de pagamento.
-
-| Passo | Ação | Resultado Esperado |
-| :---: | :--- | :--- |
-| 1 | Acessar a página de pagamento. | O sistema exibe mensagens de validação para os campos ausentes e impede o pagamento. |
-| 2 | Preencher apenas alguns dos campos obrigatórios. | |
-| 3 | Clicar em Pagar Agora. | |
+| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| :---: | :--- | :--- | :--- |
+| **1** | Acessar a página de pagamento. | URL de pagamento | A tela de pagamento é carregada corretamente. |
+| **2** | Preencher apenas alguns dos campos obrigatórios do formulário. | Campos parciais preenchidos | Os dados informados constam na tela, restando campos obrigatórios vazios. |
+| **3** | Clicar no botão `Pay Now` (Pagar Agora). | Botão: `Pay Now` | O sistema exibe mensagens de validação para os campos ausentes e impede a conclusão do pagamento. |
 
 ---
 
 ### TC-PAY-004 — Tentar realizar o pagamento sem selecionar o tipo de cartão de crédito
-ID: QA-PAY04
+* **ID:** QA-PAY04
+* **Prioridade:** Média
+* **Objetivo:** Validar a obrigatoriedade de seleção da bandeira/tipo de cartão de crédito antes da submissão.
+* **Pré-condições:** Estar na página de pagamento.
 
-Prioridade: Média
-
-Objetivo: Validar a obrigatoriedade de seleção da bandeira/tipo de cartão de crédito antes da submissão.
-
-Pré-condições: Estar na página de pagamento.
-
-| Passo | Ação | Resultado Esperado |
-| :---: | :--- | :--- |
-| 1 | Acessar a página de pagamento. | O sistema impede o pagamento e exibe uma mensagem de validação para a seleção do tipo de cartão. |
-| 2 | Preencher todos os detalhes obrigatórios do cartão. | |
-| 3 | Não selecionar um tipo de cartão de crédito. | |
-| 4 | Clicar em Pagar Agora. | |
+| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| :---: | :--- | :--- | :--- |
+| **1** | Acessar a página de pagamento. | URL de pagamento | A tela de pagamento é exibida. |
+| **2** | Preencher todos os detalhes obrigatórios do cartão (número, validade e nome). | Dados válidos inseridos | Os campos de texto do cartão encontram-se preenchidos. |
+| **3** | Omitir a seleção do tipo de cartão de crédito. | Tipo de cartão: *Não selecionado* | Nenhum tipo/bandeira fica marcado. |
+| **4** | Clicar no botão `Pay Now` (Pagar Agora). | Botão: `Pay Now` | O sistema impede o pagamento e exibe uma mensagem de validação exigindo a seleção do tipo de cartão. |
 
 ---
 
 ### TC-PAY-005 — Inserir dados de cartão de crédito que não correspondem ao tipo de cartão selecionado
-ID: QA-PAY05
+* **ID:** QA-PAY05
+* **Prioridade:** Alta
+* **Objetivo:** Verificar se o sistema valida a consistência entre o tipo de cartão selecionado e o número inserido.
+* **Pré-condições:** Estar na página de pagamento.
 
-Prioridade: Alta
-
-Objetivo: Verificar se o sistema valida a consistência entre o tipo de cartão selecionado e o número inserido.
-
-Pré-condições: Estar na página de pagamento.
-
-| Passo | Ação | Resultado Esperado |
-| :---: | :--- | :--- |
-| 1 | Acessar a página de pagamento. | O sistema detecta a divergência no tipo de cartão e impede o envio do pagamento. |
-| 2 | Selecionar um tipo de cartão de crédito. | |
-| 3 | Inserir um número de cartão de crédito que não corresponde ao tipo selecionado. | |
-| 4 | Preencher os campos obrigatórios restantes. | |
-| 5 | Clicar em Pagar Agora. | |
+| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| :---: | :--- | :--- | :--- |
+| **1** | Acessar a página de pagamento. | URL de pagamento | A tela de pagamento é exibida. |
+| **2** | Selecionar um tipo específico de cartão de crédito (ex: Visa). | **Tipo**: `Visa` | O tipo de cartão fica selecionado. |
+| **3** | Inserir um número de cartão de crédito pertencente a outra bandeira (ex: MasterCard). | **Número**: `Incompatível` | O número é inserido no campo correspondente. |
+| **4** | Preencher os campos obrigatórios restantes com dados válidos. | Validade e Nome válidos | Demais campos preenchidos. |
+| **5** | Clicar no botão `Pay Now` (Pagar Agora). | Botão: `Pay Now` | O sistema detecta a divergência no tipo de cartão e impede o envio do pagamento. |
 
 ---
 
 ### TC-PAY-006 — Tentar realizar o pagamento com formato de número de cartão de crédito inválido
-ID: QA-PAY06
+* **ID:** QA-PAY06
+* **Prioridade:** Alta
+* **Objetivo:** Garantir que o sistema valide a estrutura/formato do número do cartão de crédito.
+* **Pré-condições:** Estar na página de pagamento.
 
-Prioridade: Alta
-
-Objetivo: Garantir que o sistema valide a estrutura/formato do número do cartão de crédito.
-
-Pré-condições: Estar na página de pagamento.
-
-| Passo | Ação | Resultado Esperado |
-| :---: | :--- | :--- |
-| 1 | Acessar a página de pagamento. | O sistema exibe uma mensagem de erro para o número de cartão inválido e impede o pagamento. |
-| 2 | Selecionar um tipo de cartão de crédito. | |
-| 3 | Inserir um formato de número de cartão de crédito inválido. | |
-| 4 | Preencher os campos obrigatórios restantes. | |
-| 5 | Clicar em Pagar Agora. | |
+| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| :---: | :--- | :--- | :--- |
+| **1** | Acessar a página de pagamento. | URL de pagamento | A tela de pagamento é exibida. |
+| **2** | Selecionar um tipo de cartão de crédito. | Tipo de cartão selecionado | Bandeira definida. |
+| **3** | Inserir um formato de número de cartão de crédito inválido (ex: letras ou dígitos insuficientes). | **Card Number**: `1234-abcd` | O valor inválido é inserido no campo. |
+| **4** | Preencher os campos obrigatórios restantes com dados válidos. | Validade e Nome válidos | Demais campos preenchidos. |
+| **5** | Clicar no botão `Pay Now` (Pagar Agora). | Botão: `Pay Now` | O sistema exibe uma mensagem de erro para o formato de número de cartão inválido e impede o pagamento. |
 
 ---
 
 ### TC-PAY-007 — Tentar realizar o pagamento com cartão de crédito expirado
-ID: QA-PAY07
+* **ID:** QA-PAY07
+* **Prioridade:** Alta
+* **Objetivo:** Validar que o sistema rejeita cartões cuja data de validade já tenha expirado.
+* **Pré-condições:** Estar na página de pagamento.
 
-Prioridade: Alta
-
-Objetivo: Validar que o sistema rejeita cartões cuja data de validade já tenha expirado.
-
-Pré-condições: Estar na página de pagamento.
-
-| Passo | Ação | Resultado Esperado |
-| :---: | :--- | :--- |
-| 1 | Acessar a página de pagamento. | O sistema exibe uma mensagem de erro indicando que o cartão está expirado e impede o pagamento. |
-| 2 | Selecionar um tipo de cartão de crédito. | |
-| 3 | Inserir um número de cartão de crédito. | |
-| 4 | Inserir uma data de validade expirada. | |
-| 5 | Preencher os campos obrigatórios restantes. | |
-| 6 | Clicar em Pagar Agora. | |
+| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| :---: | :--- | :--- | :--- |
+| **1** | Acessar a página de pagamento. | URL de pagamento | A tela de pagamento é exibida. |
+| **2** | Selecionar um tipo de cartão de crédito. | Tipo de cartão selecionado | Bandeira definida. |
+| **3** | Inserir um número de cartão de crédito válido. | Número válido | Campo de cartão preenchido. |
+| **4** | Inserir uma data de validade já expirada (passada). | **Expiration**: `12/22` (ou data anterior à atual) | Data expirada inserida no campo. |
+| **5** | Preencher os campos obrigatórios restantes com dados válidos. | Nome do portador válido | Demais campos preenchidos. |
+| **6** | Clicar no botão `Pay Now` (Pagar Agora). | Botão: `Pay Now` | O sistema exibe uma mensagem de erro indicando que o cartão está expirado e impede o pagamento. |
 
 ---
 
 ### TC-PAY-008 — Tentar realizar o pagamento com nome do portador do cartão inválido ou vazio
-ID: QA-PAY08
+* **ID:** QA-PAY08
+* **Prioridade:** Média
+* **Objetivo:** Validar o comportamento do sistema ao receber dados incorretos ou ausentes no nome do portador.
+* **Pré-condições:** Estar na página de pagamento.
 
-Prioridade: Média
-
-Objetivo: Validar o comportamento do sistema ao receber dados incorretos ou ausentes no nome do portador.
-
-Pré-condições: Estar na página de pagamento.
-
-| Passo | Ação | Resultado Esperado |
-| :---: | :--- | :--- |
-| 1 | Acessar a página de pagamento. | O sistema exibe uma mensagem de validação para o nome do portador do cartão e impede o pagamento. |
-| 2 | Selecionar um tipo de cartão de crédito. | |
-| 3 | Inserir número e data de validade do cartão válidos. | |
-| 4 | Deixar o nome do portador vazio ou inserir caracteres inválidos. | |
-| 5 | Clicar em Pagar Agora. | |
+| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| :---: | :--- | :--- | :--- |
+| **1** | Acessar a página de pagamento. | URL de pagamento | A tela de pagamento é exibida. |
+| **2** | Selecionar um tipo de cartão de crédito. | Tipo de cartão selecionado | Bandeira definida. |
+| **3** | Inserir número e data de validade do cartão válidos. | Dados válidos do cartão | Campos preenchidos. |
+| **4** | Deixar o nome do portador vazio ou inserir caracteres inválidos/números. | **Cardholder Name**: `12345` ou `Vazio` | Campo preenchido incorretamente ou em branco. |
+| **5** | Clicar no botão `Pay Now` (Pagar Agora). | Botão: `Pay Now` | O sistema exibe uma mensagem de validação para o nome do portador do cartão e impede o pagamento. |
 
 ---
 
 ### TC-PAY-009 — Múltiplos cliques no botão Pagar Agora
-ID: QA-PAY09
+* **ID:** QA-PAY09
+* **Prioridade:** Alta
+* **Objetivo:** Validar a prevenção de requisições duplicadas (duplo clique) no botão de submissão de pagamento.
+* **Pré-condições:** Estar na página de pagamento com dados válidos preenchidos.
 
-Prioridade: Alta
-
-Objetivo: Validar a prevenção de requisições duplicadas (duplo clique) no botão de submissão de pagamento.
-
-Pré-condições: Estar na página de pagamento com dados válidos preenchidos.
-
-| Passo | Ação | Resultado Esperado |
-| :---: | :--- | :--- |
-| 1 | Acessar a página de pagamento. | O sistema processa o pagamento apenas uma vez e impede envios duplicados. |
-| 2 | Preencher todos os campos obrigatórios com dados válidos. | |
-| 3 | Clicar em Pagar Agora várias vezes rapidamente. | |
+| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| :---: | :--- | :--- | :--- |
+| **1** | Acessar a página de pagamento após concluir as etapas anteriores. | URL de pagamento / Sessão ativa | A página de pagamento é exibida com todos os campos habilitados. |
+| **2** | Preencher todos os campos obrigatórios do formulário de pagamento com dados válidos. | **Cartão**: Válido<br>**Validade**: Válida<br>**Nome**: Válido | Os campos são preenchidos corretamente e o botão de submissão fica pronto para uso. |
+| **3** | Clicar no botão `Pay Now` (Pagar Agora) várias vezes rapidamente em sequência. | Botão: `Pay Now` | O sistema processa a transação de pagamento apenas uma única vez e bloqueia/ignora os cliques duplicados, evitando cobranças em duplicidade. |
 
 ---
 
 ### TC-PAY-010 — Tentar acessar a página de pagamento diretamente via URL sem concluir as etapas anteriores
-ID: QA-PAY10
+* **ID:** QA-PAY10
+* **Prioridade:** Alta
+* **Objetivo:** Validar as regras de segurança e controle de fluxo impedindo o acesso direto à tela de pagamento por URL.
+* **Pré-condições:** Estar logado, mas sem concluir as etapas de seleção de voo e dados do passageiro.
 
-Prioridade: Alta
-
-Objetivo: Validar as regras de segurança e controle de fluxo impedindo o acesso direto à tela de pagamento por URL.
-
-Pré-condições: Estar logado, mas sem concluir as etapas de seleção de voo e dados do passageiro.
-
-| Passo | Ação | Massa de Dados / Parâmetros | Resultado Esperado |
+| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
-| 1 | Inserir diretamente a URL da página de pagamento no navegador. | URL de *payment* | O sistema deve bloquear o acesso direto, exibir uma mensagem de erro de acesso não autorizado ou redirecionar o usuário para o início do fluxo. |
+| **1** | Inserir diretamente a URL da página de pagamento no navegador sem passar pelo fluxo regular. | URL de *payment* (ex: `/flights/passenger/...`) | O sistema processa a requisição direta de URL sem validação prévia de etapas. |
+| **2** | Submeter a navegação direta e verificar o comportamento de segurança. | Ação de acesso via URL | O sistema deve bloquear o acesso direto, exibir uma mensagem de erro de acesso não autorizado ou redirecionar obrigatoriamente o usuário para o início do fluxo. |
