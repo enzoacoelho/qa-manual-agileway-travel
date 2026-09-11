@@ -34,13 +34,13 @@ Pré-condições: Estar na página de busca de voos logado no sistema.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
-| 1 | Acessar a página de busca de voos. | Os voos são exibidos automaticamente e o usuário pode prosseguir com a seleção de um voo de apenas ida. |
-| 2 | Selecionar o tipo de viagem como Apenas Ida (One-way). | |
-| 3 | Inserir origem e destino válidos. | |
-| 4 | Selecionar uma data de ida válida. | |
-| 5 | Observar os voos disponíveis exibidos automaticamente. | |
+| 1 | Acessar a página de busca de voos. | Apenas formulário de busca visivel na tela, voos apenas ficam disponíveis após preencher formulário de busca |
+| 2 | Selecionar o tipo de viagem como One-Way (Apenas Ida). | Campos From e To visíveis na tela para que o usuário escolha Origem e Destino de voo |
+| 3 | Selecionar origem e destino válidos. | Campos From e To ficam preenchidos por origem e destino selecionados |
+| 4 | Selecionar datas válidas de ida. | Voos disponíveis para a origem/destino e datas são exibidas abaixo |
+| 5 | Observar os voos disponíveis exibidos automaticamente. | Checkbox para selecionar um dos voos fica visível ao lado de cada opção |
 | 6 | Selecionar um voo disponível. | |
-| 7 | Clicar em Continuar. | |
+| 7 | Clicar em Continuar. | Formulário de busca desaparece e etapa de Booking se inicia com um formulário para inserir dados do passageiro |
 
 ---
 
