@@ -2,7 +2,7 @@
 
 ## Cenários Válidos
 
-### TC-BK-001 — Inserir nome e sobrenome válidos do passageiro
+### TC-BK-001 — Realizar o booking com dados válidos com sucesso
 ID: QA-BK01
 
 Prioridade: Alta
@@ -39,7 +39,7 @@ Pré-condições: Estar na página de detalhes do passageiro com um voo selecion
 ### TC-BK-005 — Verificar a integridade e exibição das informações do voo selecionado
 ID: QA-BK05
 
-Prioridade: Média
+Prioridade: Alta
 
 Objetivo: Garantir que os dados do voo escolhido na tela anterior sejam exibidos corretamente no resumo da página de passageiro.
  
@@ -56,7 +56,7 @@ Pré-condições: Ter selecionado um voo específico na tela anterior.
 ### TC-BK-002 — Inserir caracteres inválidos nos campos de nome do passageiro
 ID: QA-BK02
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Garantir que o sistema rejeite caracteres inválidos nos campos de nome do passageiro.
 
@@ -73,7 +73,7 @@ Pré-condições: Estar na página de detalhes do passageiro.
 ### TC-BK-003 — Tentar prosseguir com campos obrigatórios vazios
 ID: QA-BK03
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Validar que o sistema impede o avanço quando os campos obrigatórios de nome ficam vazios.
 
@@ -105,7 +105,7 @@ Pré-condições: Estar logado, mas sem nenhum voo selecionado no fluxo atual.
 ### TC-BK-007 — Validar comportamento ao tentar usar números ou caracteres especiais nos campos de nome
 ID: QA-BK07
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Garantir que o sistema rejeite entradas numéricas ou símbolos inadequados nos campos de nome do passageiro.
 
