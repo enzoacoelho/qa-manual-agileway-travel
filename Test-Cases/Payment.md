@@ -27,7 +27,7 @@ Pré-condições: Estar na página de pagamento após preencher corretamente os 
 ### TC-PAY-002 — Tentar realizar o pagamento com todos os campos obrigatórios vazios
 ID: QA-PAY02
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Garantir que o sistema bloqueie o pagamento e exiba validações quando nenhum campo for preenchido.
 
@@ -43,7 +43,7 @@ Pré-condições: Estar na página de pagamento.
 ### TC-PAY-003 — Tentar realizar o pagamento com os campos obrigatórios preenchidos parcialmente
 ID: QA-PAY03
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Verificar se o sistema impede o avanço quando apenas parte dos campos obrigatórios é preenchida.
 
@@ -78,7 +78,7 @@ Pré-condições: Estar na página de pagamento.
 ### TC-PAY-005 — Inserir dados de cartão de crédito que não correspondem ao tipo de cartão selecionado
 ID: QA-PAY05
 
-Prioridade: Média
+Prioridade: Alta
 
 Objetivo: Verificar se o sistema valida a consistência entre o tipo de cartão selecionado e o número inserido.
 
@@ -136,7 +136,7 @@ Pré-condições: Estar na página de pagamento.
 ### TC-PAY-008 — Tentar realizar o pagamento com nome do portador do cartão inválido ou vazio
 ID: QA-PAY08
 
-Prioridade: Alta
+Prioridade: Média
 
 Objetivo: Validar o comportamento do sistema ao receber dados incorretos ou ausentes no nome do portador.
 
@@ -155,7 +155,7 @@ Pré-condições: Estar na página de pagamento.
 ### TC-PAY-009 — Múltiplos cliques no botão Pagar Agora
 ID: QA-PAY09
 
-Prioridade: Média
+Prioridade: Alta
 
 Objetivo: Validar a prevenção de requisições duplicadas (duplo clique) no botão de submissão de pagamento.
 
