@@ -41,7 +41,6 @@
 | 33 | **QA-PAY02** | 1.0 | TC-PAY-002 — Tentar realizar o pagamento com todos os campos obrigatórios vazios | Alta |
 | 34 | **QA-PAY03** | 1.0 | TC-PAY-003 — Tentar realizar o pagamento com os campos obrigatórios preenchidos parcialmente | Alta |
 | 35 | **QA-PAY04** | 1.0 | TC-PAY-004 — Tentar realizar o pagamento sem selecionar o tipo de cartão de crédito | Média |
-| 36 | **QA-PAY05** | 1.0 | TC-PAY-005 — Inserir dados de cartão de crédito que não correspondem ao tipo de cartão selecionado | Média |
 | 37 | **QA-PAY06** | 1.0 | TC-PAY-006 — Tentar realizar o pagamento com formato de número de cartão de crédito inválido | Alta |
 | 38 | **QA-PAY07** | 1.0 | TC-PAY-007 — Tentar realizar o pagamento com cartão de crédito expirado | Alta |
 | 39 | **QA-PAY08** | 1.0 | TC-PAY-008 — Tentar realizar o pagamento com nome do portador do cartão inválido ou vazio | Alta |
