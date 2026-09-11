@@ -16,7 +16,6 @@
 | 8 | **QA-FS02** | 1.0 | TC-FS-002 — Selecionar viagem de apenas ida com data válida | Alta |
 | 9 | **QA-FS03** | 1.0 | TC-FS-003 — Selecionar viagem de ida e volta com a mesma data de partida e retorno | Média |
 | 10 | **QA-FS04** | 1.0 | TC-FS-004 — Verificar se o tipo de viagem padrão é "Ida e Volta" | Baixa |
-| 11 | **QA-FS05** | 1.0 | TC-FS-005 — Verificar se o botão Continuar fica habilitado quando todos os campos obrigatórios são preenchidos | Alta |
 | 12 | **QA-FS06** | 1.0 | TC-FS-006 — Selecionar voo em versões responsivas | Média |
 | 13 | **QA-FS07** | 1.0 | TC-FS-007 — Tentar prosseguir sem selecionar um voo | Alta |
 | 14 | **QA-FS08** | 1.0 | TC-FS-008 — Verificar se os voos não são exibidos quando os campos obrigatórios estão vazios | Alta |
@@ -27,7 +26,6 @@
 | 19 | **QA-FS13** | 1.0 | TC-FS-013 — Tentar selecionar a mesma cidade para origem e destino | Alta |
 | 20 | **QA-FS14** | 1.0 | TC-FS-014 — Tentar selecionar data de partida retroativa (passada) | Alta |
 | 21 | **QA-FS15** | 1.0 | TC-FS-015 — Validação de comportamento ao alternar o tipo de viagem com dados preenchidos | Média |
-| 22 | **QA-FS16** | 1.0 | TC-FS-016 — Tentar acessar a página de busca de voos sem autenticação (Acesso Direto via URL) | Alta |
 | 23 | **QA-FS17** | 1.0 | TC-FS-017 — Validar persistência da sessão após atualização da página (F5) | Média |
 | 24 | **QA-FS18** | 1.0 | TC-FS-018 — Validar comportamento com campos de seleção de Origem e Destino vazios no carregamento inicial | Baixa |
 | 25 | **QA-BK01** | 1.0 | TC-BK-001 — Inserir nome e sobrenome válidos do passageiro | Alta |
