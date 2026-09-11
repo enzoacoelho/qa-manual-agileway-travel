@@ -13,13 +13,13 @@ Pré-condições: Estar na página de busca de voos logado no sistema.
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
-| 1 | Acessar a página de busca de voos. | Os voos disponíveis são exibidos automaticamente após o preenchimento dos critérios de busca, permitindo que o usuário selecione um voo e prossiga para a próxima etapa. |
-| 2 | Selecionar o tipo de viagem como Ida e Volta (Return). | |
-| 3 | Inserir origem e destino válidos. | |
-| 4 | Selecionar datas válidas de ida e volta. | |
-| 5 | Observar os voos disponíveis exibidos automaticamente. | |
+| 1 | Acessar a página de busca de voos. | Apenas formulário de busca visivel na tela, voos apenas ficam disponíveis após preencher formulário de busca |
+| 2 | Selecionar o tipo de viagem como Ida e Volta (Return). | Campos From e To visíveis na tela para que o usuário escolha Origem e Destino de voo |
+| 3 | Selecionar origem e destino válidos. | Campos From e To ficam preenchidos por origem e destino selecionados |
+| 4 | Selecionar datas válidas de ida e volta. | Voos disponíveis para a origem/destino e datas são exibidas abaixo |
+| 5 | Observar os voos disponíveis exibidos automaticamente. | Checkbox para selecionar um dos voos fica visível ao lado de cada opção |
 | 6 | Selecionar um voo disponível. | |
-| 7 | Clicar em Continuar. | |
+| 7 | Clicar em Continuar. | Formulário de busca desaparece e etapa de Booking se inicia com um formulário para inserir dados do passageiro |
 
 ---
 
