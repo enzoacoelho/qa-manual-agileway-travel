@@ -13,12 +13,12 @@ Pré-condições: Estar na página de pagamento após preencher corretamente os 
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
-| 1 | Acessar a página de pagamento após concluir os detalhes do passageiro. | O pagamento é processado com sucesso e o usuário é redirecionado para a página de confirmação ou página inicial. |
-| 2 | Selecionar o tipo de cartão de crédito. | |
+| 1 | Acessar a página de pagamento após concluir os detalhes do passageiro. | Detalhes do voo e valores são exibidos na tela e abaixo um formulário para inserir dados do cartão de crédito é exibida na tela |
+| 2 | Selecionar o tipo de cartão de crédito.  | Checkbox do tipo de cartão fica visivelmente selecionado |
 | 3 | Inserir um número de cartão de crédito válido. | |
 | 4 | Inserir uma data de validade válida. | |
 | 5 | Inserir o nome do portador do cartão válido. | |
-| 6 | Clicar em Pagar Agora (Pay Now). | |
+| 6 | Clicar em Pagar Agora (Pay Now). | Confirmação de pagamento e detalhes da compra e Booking number exibidos na tela 
 
 ---
 
