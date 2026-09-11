@@ -13,10 +13,10 @@ Pré-condições: Estar na página de detalhes do passageiro após selecionar um
 
 | Passo | Ação | Resultado Esperado |
 | :---: | :--- | :--- |
-| 1 | Acessar a página de detalhes do passageiro após selecionar um voo. | Os detalhes do passageiro são aceitos e o usuário é redirecionado para a página de pagamento. |
-| 2 | Inserir um primeiro nome válido. | |
-| 3 | Inserir um sobrenome válido. | |
-| 4 | Clicar em Next. | |
+| 1 | Acessar a página de detalhes do passageiro após selecionar um voo. | Informações do Voo selecionado e um formulário para inserir informações do passageiro é exibida na tela |
+| 2 | Inserir um primeiro nome válido. | Campo preenchido sem nenhum problema|
+| 3 | Inserir um sobrenome válido. | Campo preenchido sem nenhum problema |
+| 4 | Clicar em Next. | Etapa de fluxo de pagamento é exibida na tela |
 
 ---
 
