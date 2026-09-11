@@ -80,7 +80,7 @@
 
 | Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
-| **1** | Inserir diretamente a URL da etapa de passageiro no navegador. | URL de *booking* (ex: `/flights/passenger/...`) | A requisição direta da rota restrita é disparada sem passagem pelo fluxo de voos. |
+| **1** | Inserir diretamente a URL da etapa de passageiro no navegador. | URL de *booking* (ex: `flights/passenger/118028`) | A requisição direta da rota restrita é disparada sem passagem pelo fluxo de voos. |
 | **2** | Submeter a navegação direta e verificar o comportamento. | Ação de acesso via URL | O sistema deve bloquear a ação, exibir erro ou redirecionar o usuário de volta para a tela de seleção de voos. |
 
 ---
