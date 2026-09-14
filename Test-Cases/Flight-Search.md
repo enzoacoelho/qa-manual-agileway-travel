@@ -70,7 +70,7 @@
 
 ## Cenários Inválidos
 
-### TC-FS-007 — Tentativa de prosseguir para o booking sem selecionar um voo
+### TC-FS-005 — Tentativa de prosseguir para o booking sem selecionar um voo
 * **ID:** QA-FS07
 * **Prioridade:** Média
 * **Objetivo:** Validar que o sistema bloqueia o avanço caso o usuário tente prosseguir sem escolher um voo da lista.
@@ -85,7 +85,7 @@
 
 ---
 
-### TC-FS-008 — Verificar se os voos não são exibidos quando os campos obrigatórios estão vazios
+### TC-FS-006 — Verificar se os voos não são exibidos quando os campos obrigatórios estão vazios
 * **ID:** QA-FS08
 * **Prioridade:** Média
 * **Objetivo:** Garantir que a listagem de voos permaneça oculta ou vazia se houver campos obrigatórios incompletos.
@@ -98,7 +98,7 @@
 
 ---
 
-### TC-FS-009 — Selecionar mesma origem e destino com a mesma data de ida e volta
+### TC-FS-007 — Selecionar mesma origem e destino com a mesma data de ida e volta
 * **ID:** QA-FS09
 * **Prioridade:** Média
 * **Objetivo:** Validar a restrição de rotas onde a origem e o destino são idênticos.
@@ -113,7 +113,7 @@
 
 ---
 
-### TC-FS-010 — Selecionar viagem de ida e volta com data de retorno anterior à data de partida
+### TC-FS-008 — Selecionar viagem de ida e volta com data de retorno anterior à data de partida
 * **ID:** QA-FS10
 * **Prioridade:** Média
 * **Objetivo:** Garantir que o sistema rejeite períodos de viagem ilógicos (retorno antes da ida).
@@ -129,7 +129,7 @@
 
 ---
 
-### TC-FS-011 — Selecionar múltiplos voos ao mesmo tempo
+### TC-FS-009 — Selecionar múltiplos voos ao mesmo tempo
 * **ID:** QA-FS11
 * **Prioridade:** Média
 * **Objetivo:** Validar que o sistema permite selecionar apenas um voo por transação de compra.
@@ -144,7 +144,7 @@
 
 ---
 
-### TC-FS-012 — Verificar se o campo de data de retorno fica oculto para viagens de apenas ida
+### TC-FS-010 — Verificar se o campo de data de retorno fica oculto para viagens de apenas ida
 * **ID:** QA-FS12
 * **Prioridade:** Média
 * **Objetivo:** Validar a alteração dinâmica da interface ao alternar para o tipo de viagem *One-way*.
@@ -158,7 +158,7 @@
 
 ---
 
-### TC-FS-013 — Validar restrição de seleção de mesma cidade para Origem (From) e Destino (To)
+### TC-FS-011 — Validar restrição de seleção de mesma cidade para Origem (From) e Destino (To)
 * **ID:** QA-FS13
 * **Prioridade:** Média
 * **Objetivo:** Garantir que o sistema impeça a busca de voos quando a cidade de origem e a cidade de destino forem idênticas.
@@ -170,7 +170,7 @@
 
 ---
 
-### TC-FS-014 — Tentar selecionar data de partida retroativa (passada)
+### TC-FS-012 — Tentar selecionar data de partida retroativa (passada)
 * **ID:** QA-FS14
 * **Prioridade:** Média
 * **Objetivo:** Impedir a seleção de datas retroativas no campo de partida.
@@ -183,7 +183,7 @@
 
 ---
 
-### TC-FS-015 — Validação de comportamento ao alternar o tipo de viagem com dados preenchidos
+### TC-FS-013 — Validação de comportamento ao alternar o tipo de viagem com dados preenchidos
 * **ID:** QA-FS15
 * **Prioridade:** Média
 * **Objetivo:** Verificar se os dados e o layout se comportam de maneira estável ao trocar o tipo de viagem após preenchimento parcial.
