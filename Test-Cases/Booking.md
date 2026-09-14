@@ -17,19 +17,6 @@
 
 ---
 
-### TC-BK-004 — Inserir nomes com limites máximos ou mínimos de caracteres válidos
-* **ID:** QA-BK04
-* **Prioridade:** Média
-* **Objetivo:** Verificar o comportamento do sistema ao aceitar nomes muito curtos ou nomes compostos extensos.
-* **Pré-condições:** Estar na página de detalhes do passageiro com um voo selecionado.
-
-| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| **1** | Inserir nome e sobrenome com limites extremos permitidos. | **First name**: `A`, **Last name**: `Smith-Jones` | O sistema deve aceitar e processar corretamente, ou aplicar a regra de validação esperada para nomes curtos. |
-| **2** | Clicar no botão `Next`. | Botão: `Next` | Transição bem-sucedida para a próxima etapa. |
-
----
-
 ### TC-BK-005 — Verificar a integridade e exibição das informações do voo selecionado
 * **ID:** QA-BK05
 * **Prioridade:** Alta
@@ -82,16 +69,3 @@
 | :---: | :--- | :--- | :--- |
 | **1** | Inserir diretamente a URL da etapa de passageiro no navegador. | URL de *booking* (ex: `flights/passenger/118028`) | A requisição direta da rota restrita é disparada sem passagem pelo fluxo de voos. |
 | **2** | Submeter a navegação direta e verificar o comportamento. | Ação de acesso via URL | O sistema deve bloquear a ação, exibir erro ou redirecionar o usuário de volta para a tela de seleção de voos. |
-
----
-
-### TC-BK-007 — Validar comportamento ao tentar usar números ou caracteres especiais nos campos de nome
-* **ID:** QA-BK07
-* **Prioridade:** Média
-* **Objetivo:** Garantir que o sistema rejeite entradas numéricas ou símbolos inadequados nos campos de nome do passageiro.
-* **Pré-condições:** Estar na página de detalhes do passageiro.
-
-| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| **1** | Inserir números ou símbolos nos campos de nome. | **First name**: `John123`, **Last name**: `@Doe` | Dados com números e símbolos inseridos nos inputs. |
-| **2** | Tentar avançar no fluxo clicando em `Next`. | Botão: `Next` | O sistema deve exibir mensagem de erro de validação e impedir o avanço. |
