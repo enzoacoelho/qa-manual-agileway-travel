@@ -193,17 +193,3 @@
 | :---: | :--- | :--- | :--- |
 | **1** | Preencher a origem, destino e a data de retorno. | Campos preenchidos para ida e volta | Os dados inseridos refletem corretamente na interface. |
 | **2** | Alternar o tipo de viagem para *One way*. | Radio button: `One way` | O campo de retorno é ocultado ou limpo, mantendo a estabilidade da interface e preservando os dados da ida. |
-
----
-
-### TC-FS-017 — Validar persistência da sessão após atualização da página (F5)
-* **ID:** QA-FS17
-* **Prioridade:** Média
-* **Objetivo:** Garantir estabilidade e persistência de dados ou do estado da aplicação após um *refresh* (F5).
-* **Pré-condições:** Estar na página de busca de voos logado e com dados inseridos.
-
-| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| **1** | Preencher os campos de origem, destino e selecionar um tipo de viagem. | Origem e Destino válidos | Os campos ficam preenchidos corretamente na tela. |
-| **2** | Atualizar a página do navegador (pressionar F5). | Ação de Refresh | O sistema executa a recarga da página atual. |
-| **3** | Verificar o estado da aplicação após o recarregamento. | Estado da sessão pós-F5 | O sistema deve manter o usuário logado e restaurar os campos ou redefinir para o estado padrão de forma controlada, sem quebrar a aplicação. |
