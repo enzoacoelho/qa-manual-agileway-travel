@@ -1,26 +1,62 @@
 # Manual QA Testing Portfolio – AgileWay Travel
 
-This repository contains a complete manual QA testing portfolio based on the AgileWay Travel demo application, simulating a real-world QA workflow.
+Este projeto prático de QA manual criado foi criado para demonstrar habilidades em testes funcionais, gerenciamento de testes e rastreamento de defeitos utilizando Jira e Zephyr Scale.
 
-## Application Under Test
-AgileWay Travel  
-https://travel.agileway.net/
+## 🧪 Aplicação Alvo
 
-## Tools Used
-- Jira Cloud
-- Zephyr Scale
+* **Sistema:** AgileWay Travel
+* **URL:** [https://travel.agileway.net/](https://travel.agileway.net/)
 
-## Testing Scope
-- Login
-- Flight Search
-- Booking Flow (Passenger Details)
-- Payment
+Sistema web simulado de reservas de passagens aéreas que abrange o fluxo completo de busca de rotas, preenchimento de dados de passageiros e checkout de pagamento.
 
-## Activities Performed
-- Test planning
-- Manual test case design (valid and invalid scenarios)
-- Test execution cycles
-- Bug reporting with detailed steps to reproduce, expected and actual results
+---
 
-> This project was created for learning and portfolio purposes, following industry-standard QA practices.
+## 🎯 Escopo do Projeto
 
+Implementação de processos de garantia de qualidade focados na validação da aplicação AgileWay Travel, abrangendo:
+
+* Validação funcional de regras de negócio e fluxos end-to-end de reservas de voos.
+* Projeto de cenários de teste cobrindo caminhos críticos e cenários negativos de validação de dados.
+* Mapeamento, execução e rastreamento de ciclos de teste via Jira e Zephyr Scale.
+
+
+---
+
+## 🔍 Módulos Validados
+
+* **Autenticação e Gestão de Contas:** Restrições de senha, validação de inputs e tratamento de erros de cadastro.
+* **Busca e Seleção de Voos:** Validação de rotas de origem e destino, seleção de tipos de viagem e escolha de datas.
+* **Booking/Dados do Passageiro:** Validação de campos de nome e sobrenome, garantindo a consistência das informações inseridas.
+* **Checkout e Pagamento:** Regras de preenchimento obrigatório, validações de formulário de cartão de crédito e fluxos de confirmação de reserva.
+
+---
+
+## 🛠 Stack de Ferramentas
+
+* **Jira Cloud:** Gestão de apontamentos e ciclo de vida de bugs.
+* **Zephyr Scale:** Organização de suítes de teste, planos de execução e métricas de cobertura.
+* **Git / Markdown:** Versionamento e padronização da documentação técnica.
+
+---
+
+## 📊 Métricas de Execução (Zephyr Scale)
+
+A execução integral da suíte planejada registrou os seguintes indicadores:
+
+![Resultados de Test Execution](/docs/screenshots/report/zephyr-report-summary.png)
+
+* **Casos de Teste Executados:** 31
+* **Sucesso (Pass):** 17
+* **Falhas (Fail):** 14
+* **Defeitos Mapeados:** 14 relatórios técnicos de bugs com evidências visuais e passos de reprodução.
+
+---
+
+## 📂 Estrutura do Repositório
+
+```text
+docs/
+├── bug-reports/           # Relatórios de defeitos estruturados em Markdown
+├── screenshots/    # Evidências visuais de execução e falhas
+├── test-cases/     # Cenários e casos de teste documentados por módulo
+└── test-cycles/    # Escopos de execução (Smoke, Alto Risco e Regressão)
