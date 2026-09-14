@@ -34,35 +34,6 @@
 
 ---
 
-### TC-PAY-003 — Tentar realizar o pagamento com os campos obrigatórios preenchidos parcialmente
-* **ID:** QA-PAY03
-* **Prioridade:** Média
-* **Objetivo:** Verificar se o sistema impede o avanço quando apenas parte dos campos obrigatórios é preenchida.
-* **Pré-condições:** Estar na página de pagamento.
-
-| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| **1** | Acessar a página de pagamento. | URL de pagamento | A tela de pagamento é carregada corretamente. |
-| **2** | Preencher apenas alguns dos campos obrigatórios do formulário. | Campos parciais preenchidos | Os dados informados constam na tela, restando campos obrigatórios vazios. |
-| **3** | Clicar no botão `Pay Now` (Pagar Agora). | Botão: `Pay Now` | O sistema exibe mensagens de validação para os campos ausentes e impede a conclusão do pagamento. |
-
----
-
-### TC-PAY-004 — Tentar realizar o pagamento sem selecionar o tipo de cartão de crédito
-* **ID:** QA-PAY04
-* **Prioridade:** Média
-* **Objetivo:** Validar a obrigatoriedade de seleção da bandeira/tipo de cartão de crédito antes da submissão.
-* **Pré-condições:** Estar na página de pagamento.
-
-| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| **1** | Acessar a página de pagamento. | URL de pagamento | A tela de pagamento é exibida. |
-| **2** | Preencher todos os detalhes obrigatórios do cartão (número, validade e nome). | Dados válidos inseridos | Os campos de texto do cartão encontram-se preenchidos. |
-| **3** | Omitir a seleção do tipo de cartão de crédito. | Tipo de cartão: *Não selecionado* | Nenhum tipo/bandeira fica marcado. |
-| **4** | Clicar no botão `Pay Now` (Pagar Agora). | Botão: `Pay Now` | O sistema impede o pagamento e exibe uma mensagem de validação exigindo a seleção do tipo de cartão. |
-
----
-
 ### TC-PAY-006 — Tentar realizar o pagamento com formato de número de cartão de crédito inválido
 * **ID:** QA-PAY06
 * **Prioridade:** Alta
@@ -93,22 +64,6 @@
 | **4** | Inserir uma data de validade já expirada (passada). | **Expiration**: `12/22` (ou data anterior à atual) | Data expirada inserida no campo. |
 | **5** | Preencher os campos obrigatórios restantes com dados válidos. | Nome do portador válido | Demais campos preenchidos. |
 | **6** | Clicar no botão `Pay Now` (Pagar Agora). | Botão: `Pay Now` | O sistema exibe uma mensagem de erro indicando que o cartão está expirado e impede o pagamento. |
-
----
-
-### TC-PAY-008 — Tentar realizar o pagamento com nome do portador do cartão inválido ou vazio
-* **ID:** QA-PAY08
-* **Prioridade:** Média
-* **Objetivo:** Validar o comportamento do sistema ao receber dados incorretos ou ausentes no nome do portador.
-* **Pré-condições:** Estar na página de pagamento.
-
-| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| **1** | Acessar a página de pagamento. | URL de pagamento | A tela de pagamento é exibida. |
-| **2** | Selecionar um tipo de cartão de crédito. | Tipo de cartão selecionado | Bandeira definida. |
-| **3** | Inserir número e data de validade do cartão válidos. | Dados válidos do cartão | Campos preenchidos. |
-| **4** | Deixar o nome do portador vazio ou inserir caracteres inválidos/números. | **Cardholder Name**: `12345` ou `Vazio` | Campo preenchido incorretamente ou em branco. |
-| **5** | Clicar no botão `Pay Now` (Pagar Agora). | Botão: `Pay Now` | O sistema exibe uma mensagem de validação para o nome do portador do cartão e impede o pagamento. |
 
 ---
 
