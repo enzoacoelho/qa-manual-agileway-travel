@@ -17,7 +17,7 @@
 
 ---
 
-### TC-BK-005 — Verificar a integridade e exibição das informações do voo selecionado
+### TC-BK-002 — Verificar a integridade e exibição das informações do voo selecionado
 * **ID:** QA-BK05
 * **Prioridade:** Alta
 * **Objetivo:** Garantir que os dados do voo escolhido na tela anterior sejam exibidos corretamente no resumo da página de passageiro.
@@ -31,7 +31,7 @@
 
 ## Cenários Inválidos
 
-### TC-BK-002 — Inserir caracteres inválidos nos campos de nome do passageiro
+### TC-BK-003 — Inserir caracteres inválidos nos campos de nome do passageiro
 * **ID:** QA-BK02
 * **Prioridade:** Média
 * **Objetivo:** Garantir que o sistema rejeite caracteres inválidos nos campos de nome do passageiro.
@@ -45,7 +45,7 @@
 
 ---
 
-### TC-BK-003 — Tentar prosseguir com campos obrigatórios vazios
+### TC-BK-004 — Tentar prosseguir com campos obrigatórios vazios
 * **ID:** QA-BK03
 * **Prioridade:** Média
 * **Objetivo:** Validar que o sistema impede o avanço quando os campos obrigatórios de nome ficam vazios.
@@ -59,7 +59,7 @@
 
 ---
 
-### TC-BK-006 — Tentar acessar a página de Passenger Details diretamente via URL sem selecionar um voo
+### TC-BK-005 — Tentar acessar a página de Passenger Details diretamente via URL sem selecionar um voo
 * **ID:** QA-BK06
 * **Prioridade:** Alta
 * **Objetivo:** Validar as regras de controle de fluxo e segurança impedindo o acesso direto por URL sem seleção prévia de voo.
