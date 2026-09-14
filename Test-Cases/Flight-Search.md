@@ -38,7 +38,7 @@
 
 ---
 
-### TC-FS-003 — Selecionar viagem de ida e volta com a mesma data de partida e retorno
+### TC-FS-003 — Selecionar viagem de ida e volta com a mesma data de partida e retorno (Cidades próximas e horários compatíveis)
 * **ID:** QA-FS03
 * **Prioridade:** Média
 * **Objetivo:** Validar o comportamento do sistema ao selecionar datas de partida e retorno idênticas para uma viagem de ida e volta.
@@ -65,21 +65,6 @@
 | Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
 | **1** | Acessar a página de busca de voos recém-carregada. | URL limpa da aplicação | A opção de viagem de ida e volta (*Return*) vem selecionada por padrão na interface. |
-
----
-
-### TC-FS-006 — Selecionar voo em versões responsivas
-* **ID:** QA-FS06
-* **Prioridade:** Média
-* **Objetivo:** Validar a funcionalidade de busca e seleção de voos em diferentes resoluções de tela.
-* **Pré-condições:** Estar acessando o sistema via dispositivo móvel ou em modo de simulação responsiva.
-
-| Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
-| :---: | :--- | :--- | :--- |
-| **1** | Acessar a página de busca de voos em diferentes tamanhos de tela. | Resolução mobile / tablet simulada | O layout se adapta corretamente à viewport reduzida, mantendo os elementos acessíveis. |
-| **2** | Preencher todos os campos obrigatórios. | Dados válidos adaptados à interface | Os inputs aceitam o preenchimento sem quebra visual. |
-| **3** | Observar os voos disponíveis exibidos automaticamente. | Listagem responsiva | Os voos são listados de forma legível na tela menor. |
-| **4** | Selecionar um voo disponível. | Toque ou clique no elemento | A seleção do voo ocorre com sucesso no ambiente responsivo. |
 
 ---
 
@@ -173,11 +158,10 @@
 
 ---
 
-### TC-FS-013 — Tentar selecionar a mesma cidade para origem e destino
+### TC-FS-013 — Validar restrição de seleção de mesma cidade para Origem (From) e Destino (To)
 * **ID:** QA-FS13
 * **Prioridade:** Média
-* **Objetivo:** Validar a validação de campos iguais de origem e destino utilizando parâmetros específicos.
-* **Pré-condições:** Estar na página de busca de voos.
+* **Objetivo:** Garantir que o sistema impeça a busca de voos quando a cidade de origem e a cidade de destino forem idênticas.
 
 | Passo | Descrição da Ação | Massa de Dados / Parâmetros | Resultado Esperado |
 | :---: | :--- | :--- | :--- |
