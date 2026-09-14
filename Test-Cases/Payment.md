@@ -34,7 +34,7 @@
 
 ---
 
-### TC-PAY-006 — Tentar realizar o pagamento com formato de número de cartão de crédito inválido
+### TC-PAY-003 — Tentar realizar o pagamento com formato de número de cartão de crédito inválido
 * **ID:** QA-PAY06
 * **Prioridade:** Alta
 * **Objetivo:** Garantir que o sistema valide a estrutura/formato do número do cartão de crédito.
@@ -50,7 +50,7 @@
 
 ---
 
-### TC-PAY-007 — Tentar realizar o pagamento com cartão de crédito expirado
+### TC-PAY-004 — Tentar realizar o pagamento com cartão de crédito expirado
 * **ID:** QA-PAY07
 * **Prioridade:** Alta
 * **Objetivo:** Validar que o sistema rejeita cartões cuja data de validade já tenha expirado.
@@ -67,7 +67,7 @@
 
 ---
 
-### TC-PAY-009 — Múltiplos cliques no botão Pagar Agora
+### TC-PAY-005 — Múltiplos cliques no botão Pagar Agora
 * **ID:** QA-PAY09
 * **Prioridade:** Alta
 * **Objetivo:** Validar a prevenção de requisições duplicadas (duplo clique) no botão de submissão de pagamento.
@@ -81,7 +81,7 @@
 
 ---
 
-### TC-PAY-010 — Tentar acessar a página de pagamento diretamente via URL sem concluir as etapas anteriores
+### TC-PAY-006 — Tentar acessar a página de pagamento diretamente via URL sem concluir as etapas anteriores
 * **ID:** QA-PAY10
 * **Prioridade:** Alta
 * **Objetivo:** Validar as regras de segurança e controle de fluxo impedindo o acesso direto à tela de pagamento por URL.
