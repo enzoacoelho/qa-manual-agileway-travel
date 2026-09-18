@@ -4,7 +4,7 @@
 **Severidade:** Média
 **Prioridade:** Low
 **Componente:** Flight-Search
-**Caso de teste vinculado:** [QA-FS10](../../test-cases/flight-search.md)
+**Caso de teste vinculado:** QA-FS10
 **Ciclo de execução:** Regressão — Full
 **Ambiente:** travel.agileway.net (produção/demo pública)
 **Reportado por:** Enzo Coelho

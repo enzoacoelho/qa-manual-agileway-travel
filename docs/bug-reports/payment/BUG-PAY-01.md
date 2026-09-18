@@ -4,7 +4,7 @@
 **Severidade:** Alta
 **Prioridade:** High
 **Componente:** Payment
-**Caso de teste vinculado:** [QA-PAY06](../../test-cases/payment.md)
+**Caso de teste vinculado:** QA-PAY06
 **Ciclo de execução:** Regressão — High / Regressão — Full
 **Ambiente:** travel.agileway.net (produção/demo pública)
 **Reportado por:** Enzo Coelho

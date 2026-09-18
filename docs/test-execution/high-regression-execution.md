@@ -15,13 +15,13 @@
 | QA-L05 | Login | Tentativa de login com senha incorreta | ✅ Passou | — |
 | QA-FS01 | Flight-Search | Selecionar viagem de ida e volta com datas válidas | ✅ Passou | — |
 | QA-FS02 | Flight-Search | Selecionar viagem de apenas ida com data válida | ✅ Passou | — |
-| QA-FS09 | Flight-Search | Retorno anterior à data de partida | ❌ Falhou | [BUG-FS-04](../../bug-reports/booking/BUG-FS-04.md) |
-| QA-FS12 | Flight-Search | Validar restrição de seleção de mesma cidade para Origem (From) e Destino (To) | ❌ Falhou | [BUG-FS-03](../../bug-reports/booking/BUG-FS-03.md) |
+| QA-FS09 | Flight-Search | Retorno anterior à data de partida | ❌ Falhou | [BUG-FS-04](../bug-reports/booking/BUG-FS-04.md) |
+| QA-FS12 | Flight-Search | Validar restrição de seleção de mesma cidade para Origem (From) e Destino (To) | ❌ Falhou | [BUG-FS-03](../bug-reports/booking/BUG-FS-03.md) |
 | QA-BK01 | Booking | Realizar o booking com dados válidos com sucesso | ✅ Passou | — |
 | QA-BK02 | Booking | Integridade e exibição das informações do voo | ✅ Passou | — |
 | QA-PAY01 | Payment | Concluir o pagamento com dados de cartão de crédito válidos | ✅ Passou | — |
 | QA-PAY05 | Payment | Múltiplos cliques no botão Pagar Agora | ✅ Passou | — |
-| QA-PAY06 | Payment | Acessar pagamento via URL sem concluir etapas anteriores | ❌ Falhou | [BUG-PAY-01](../../bug-reports/payment/BUG-PAY-01.md) |
+| QA-PAY06 | Payment | Acessar pagamento via URL sem concluir etapas anteriores | ❌ Falhou | [BUG-PAY-01](../bug-reports/payment/BUG-PAY-01.md) |
 | QA-L03 | Login | Encerramento de sessão (Logout) com sucesso | ✅ Passou | — |
 
 ---

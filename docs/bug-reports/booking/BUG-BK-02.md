@@ -4,7 +4,7 @@
 **Severidade:** Média
 **Prioridade:** Normal
 **Componente:** Booking
-**Caso de teste vinculado:** [QA-BK03](../../test-cases/booking.md)
+**Caso de teste vinculado:** QA-BK03
 **Ciclo de execução:** Regressão — Full
 **Ambiente:** travel.agileway.net (produção/demo pública)
 **Reportado por:** Enzo Coelho
