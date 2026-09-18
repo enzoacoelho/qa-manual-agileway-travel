@@ -2,7 +2,7 @@
 
 ## Cenários Válidos
 
-### TC-PAY-001 — Concluir o pagamento com dados de cartão de crédito válidos
+### QA-PAY01 — Concluir o pagamento com dados de cartão de crédito válidos
 * **ID:** QA-PAY01
 * **Prioridade:** Alta
 * **Objetivo:** Validar o processamento bem-sucedido de um pagamento utilizando dados de cartão de crédito válidos.
@@ -21,7 +21,7 @@
 
 ## Cenários Inválidos
 
-### TC-PAY-002 — Tentar realizar o pagamento com todos os campos obrigatórios vazios
+### QA-PAY02 — Tentar realizar o pagamento com todos os campos obrigatórios vazios
 * **ID:** QA-PAY02
 * **Prioridade:** Média
 * **Objetivo:** Garantir que o sistema bloqueie o pagamento e exiba validações quando nenhum campo for preenchido.
@@ -34,9 +34,9 @@
 
 ---
 
-### TC-PAY-003 — Tentar realizar o pagamento com formato de número de cartão de crédito inválido
-* **ID:** QA-PAY06
-* **Prioridade:** Alta
+### QA-PAY03 — Tentar realizar o pagamento com formato de número de cartão de crédito inválido
+* **ID:** QA-PAY03
+* **Prioridade:** Média
 * **Objetivo:** Garantir que o sistema valide a estrutura/formato do número do cartão de crédito.
 * **Pré-condições:** Estar na página de pagamento.
 
@@ -50,9 +50,9 @@
 
 ---
 
-### TC-PAY-004 — Tentar realizar o pagamento com cartão de crédito expirado
-* **ID:** QA-PAY07
-* **Prioridade:** Alta
+### QA-PAY04 — Tentar realizar o pagamento com cartão de crédito expirado
+* **ID:** QA-PAY04
+* **Prioridade:** Média
 * **Objetivo:** Validar que o sistema rejeita cartões cuja data de validade já tenha expirado.
 * **Pré-condições:** Estar na página de pagamento.
 
@@ -67,8 +67,8 @@
 
 ---
 
-### TC-PAY-005 — Múltiplos cliques no botão Pagar Agora
-* **ID:** QA-PAY09
+### QA-PAY05 — Múltiplos cliques no botão Pagar Agora
+* **ID:** QA-PAY05 
 * **Prioridade:** Alta
 * **Objetivo:** Validar a prevenção de requisições duplicadas (duplo clique) no botão de submissão de pagamento.
 * **Pré-condições:** Estar na página de pagamento com dados válidos preenchidos.
@@ -81,8 +81,8 @@
 
 ---
 
-### TC-PAY-006 — Tentar acessar a página de pagamento diretamente via URL sem concluir as etapas anteriores
-* **ID:** QA-PAY10
+### QA-PAY06 — Acessar a página de pagamento diretamente via URL sem concluir as etapas anteriores
+* **ID:** QA-PAY06
 * **Prioridade:** Alta
 * **Objetivo:** Validar as regras de segurança e controle de fluxo impedindo o acesso direto à tela de pagamento por URL.
 * **Pré-condições:** Estar logado, mas sem concluir as etapas de seleção de voo e dados do passageiro.

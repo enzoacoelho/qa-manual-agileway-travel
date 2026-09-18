@@ -24,7 +24,7 @@ Implementação de processos de garantia de qualidade focados na validação da 
 
 ## 🔍 Módulos Validados
 
-* **Autenticação e Gestão de Contas:** Restrições de senha, validação de inputs e tratamento de erros de cadastro.
+* **Autenticação e Gestão de Contas:** Validação de credenciais, tratamento de erros de login e persistência de sessão.
 * **Busca e Seleção de Voos:** Validação de rotas de origem e destino, seleção de tipos de viagem e escolha de datas.
 * **Booking/Dados do Passageiro:** Validação de campos de nome e sobrenome, garantindo a consistência das informações inseridas.
 * **Checkout e Pagamento:** Regras de preenchimento obrigatório, validações de formulário de cartão de crédito e fluxos de confirmação de reserva.
@@ -45,10 +45,10 @@ A execução integral da suíte planejada registrou os seguintes indicadores:
 
 ![Resultados de Test Execution](/docs/screenshots/report/zephyr-report-summary.png)
 
-* **Casos de Teste Executados:** 31
+* **Casos de Teste Executados:** 30
 * **Sucesso (Pass):** 17
-* **Falhas (Fail):** 14
-* **Defeitos Mapeados:** 14 relatórios técnicos de bugs com evidências visuais e passos de reprodução.
+* **Falhas (Fail):** 13
+* **Defeitos Mapeados:** 13 relatórios técnicos de bugs com evidências visuais e passos de reprodução.
 
 ---
 
@@ -56,7 +56,8 @@ A execução integral da suíte planejada registrou os seguintes indicadores:
 
 ```text
 docs/
-├── bug-reports/           # Relatórios de defeitos estruturados em Markdown
-├── screenshots/    # Evidências visuais de execução e falhas
-├── test-cases/     # Cenários e casos de teste documentados por módulo
-└── test-cycles/    # Escopos de execução (Smoke, Alto Risco e Regressão)
+├── bug-reports/       # Relatórios de defeitos estruturados em Markdown
+├── screenshots/        # Evidências visuais de execução e falhas
+├── test-cases/          # Cenários e casos de teste documentados por módulo
+├── test-cycles/          # Escopos de execução (Smoke, Alto Risco e Regressão)
+└── test-execution/       # Registros de execução por ciclo, com status e bugs vinculados

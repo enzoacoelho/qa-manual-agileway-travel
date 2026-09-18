@@ -2,7 +2,7 @@
 
 ## Cenários Válidos
 
-### TC-BK-001 — Realizar o booking com dados válidos com sucesso
+### QA-BK01 — Realizar o booking com dados válidos com sucesso
 * **ID:** QA-BK01
 * **Prioridade:** Alta
 * **Objetivo:** Validar o avanço no fluxo preenchendo o primeiro nome e sobrenome válidos do passageiro.
@@ -17,9 +17,9 @@
 
 ---
 
-### TC-BK-002 — Verificar a integridade e exibição das informações do voo selecionado
-* **ID:** QA-BK05
-* **Prioridade:** Alta
+### QA-BK02 — Verificar a integridade e exibição das informações do voo selecionado
+* **ID:** QA-BK02
+* **Prioridade:** Média
 * **Objetivo:** Garantir que os dados do voo escolhido na tela anterior sejam exibidos corretamente no resumo da página de passageiro.
 * **Pré-condições:** Ter selecionado um voo específico na tela anterior.
 
@@ -31,8 +31,8 @@
 
 ## Cenários Inválidos
 
-### TC-BK-003 — Inserir caracteres inválidos nos campos de nome do passageiro
-* **ID:** QA-BK02
+### QA-BK03 — Inserir caracteres inválidos nos campos de nome do passageiro
+* **ID:** QA-BK03
 * **Prioridade:** Média
 * **Objetivo:** Garantir que o sistema rejeite caracteres inválidos nos campos de nome do passageiro.
 * **Pré-condições:** Estar na página de detalhes do passageiro.
@@ -45,8 +45,8 @@
 
 ---
 
-### TC-BK-004 — Tentar prosseguir com campos obrigatórios vazios
-* **ID:** QA-BK03
+### QA-BK04 — Tentar prosseguir com campos obrigatórios vazios
+* **ID:** QA-BK04
 * **Prioridade:** Média
 * **Objetivo:** Validar que o sistema impede o avanço quando os campos obrigatórios de nome ficam vazios.
 * **Pré-condições:** Estar na página de detalhes do passageiro.
@@ -59,8 +59,8 @@
 
 ---
 
-### TC-BK-005 — Tentar acessar a página de Passenger Details diretamente via URL sem selecionar um voo
-* **ID:** QA-BK06
+### QA-BK05 — Acessar a página de Passenger Details diretamente via URL sem selecionar um voo
+* **ID:** QA-BK05
 * **Prioridade:** Alta
 * **Objetivo:** Validar as regras de controle de fluxo e segurança impedindo o acesso direto por URL sem seleção prévia de voo.
 * **Pré-condições:** Estar logado, mas sem nenhum voo selecionado no fluxo atual.

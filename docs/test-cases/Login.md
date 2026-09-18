@@ -2,7 +2,7 @@
 
 ## Cenários Válidos
 
-### TC-LOGIN-001 — Autenticação com credenciais padrão válidas
+### QA-L01 — Autenticação com credenciais válidas com sucesso
 * **ID:** QA-L01
 * **Prioridade:** Alta
 * **Objetivo:** Validar o login utilizando as credenciais padrão indicadas na interface.
@@ -17,9 +17,9 @@
 
 ---
 
-### TC-LOGIN-002 — Autenticação com a opção "Remember me" selecionada
+### QA-L02 — Autenticação com a opção "Remember me" selecionada
 * **ID:** QA-L02
-* **Prioridade:** Média
+* **Prioridade:** Baixa
 * **Objetivo:** Validar o login marcando a opção de persistência de sessão.
 * **Pré-condições:** 
   * Estar na página de login.
@@ -32,7 +32,7 @@
 
 ---
 
-### TC-LOGIN-003 — Encerramento de sessão (Logout) com sucesso
+### QA-L03 — Encerramento de sessão (Logout) com sucesso
 * **ID:** QA-L03
 * **Prioridade:** Alta
 * **Objetivo:** Validar o fluxo de encerramento da sessão ativa do usuário.
@@ -48,7 +48,7 @@
 
 ## Cenários Inválidos
 
-### TC-LOGIN-004 — Tentativa de login com campos obrigatórios vazios
+### QA-L04 — Tentativa de login com campos obrigatórios vazios
 * **ID:** QA-L04
 * **Prioridade:** Média
 * **Objetivo:** Verificar se o sistema impede o avanço ao tentar autenticar sem preencher os campos.
@@ -62,7 +62,7 @@
 
 ---
 
-### TC-LOGIN-005 — Tentativa de login com senha incorreta
+### QA-L05 — Tentativa de login com senha incorreta
 * **ID:** QA-L05
 * **Prioridade:** Alta
 * **Objetivo:** Validar a recusa de acesso ao informar uma senha inválida para o usuário.
@@ -76,7 +76,7 @@
 
 ---
 
-### TC-LOGIN-006 — Tentativa de login com usuário inexistente
+### QA-L06 — Tentativa de login com usuário inexistente
 * **ID:** QA-L06
 * **Prioridade:** Média
 * **Objetivo:** Validar o comportamento do sistema ao tentar autenticar com um nome de usuário não cadastrado.
