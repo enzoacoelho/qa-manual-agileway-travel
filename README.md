@@ -43,7 +43,7 @@ Implementação de processos de garantia de qualidade focados na validação da 
 
 A execução integral da suíte planejada registrou os seguintes indicadores:
 
-![Resultados de Test Execution](/docs/screenshots/report/zephyr-report-summary.png)
+![Resultados de Test Execution](/docs/screenshots/report/zephyr-report.jpg)
 
 * **Casos de Teste Executados:** 30
 * **Sucesso (Pass):** 17
